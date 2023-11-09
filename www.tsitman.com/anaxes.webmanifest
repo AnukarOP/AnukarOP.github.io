@@ -1,0 +1,23 @@
+{
+    "name": "Anaxes.xyz",
+    "short_name": "Anaxes",
+    "description": "Personal website of DiscordAnaxes.",
+    "icons": [
+      {
+        "src": "assets/images/AnaxesLogo192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "assets/images/AnaxesLogo512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }
+    ],
+    "start_url": "/",
+    "display": "fullscreen",
+    "theme_color": "#0A0F16",
+    "background_color": "#0A0F16"
+  }
