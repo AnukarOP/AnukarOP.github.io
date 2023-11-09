@@ -1,0 +1,147 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+.col {
+  flex: none;
+}
+.github:hover {
+  color: #fff;
+}
+.twitter {
+  color: #1d9bf0;
+}
+.discord {
+  color: #5865f2;
+}
+.twitch {
+  color: #9146ff;
+}
+.fontawesome:hover {
+  color: #339af0;
+}
+.twitter2:hover {
+  color: #1d9bf0;
+}
+.discord2:hover {
+  color: #5865f2;
+}
+.pbot:hover {
+  color: #00c8ff;
+}
+.naruto:hover {
+  color: #ffec91;
+}
+.attack_on_titan:hover {
+  color: #d8a06d;
+}
+.valorant:hover {
+  color: #ff4655;
+}
+.bf2:hover {
+  color: #1b3264;
+}
+.ttf2:hover {
+  color: #597c82;
+}
+.socialbtn:hover {
+  transform: translate(0px, -3px);
+  animation-name: headsup;
+  animation-duration: 0.3s;
+}
+img {
+  pointer-events: none;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0a0f16;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0e141d;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0e141d;
+}
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.rainbow-text:hover {
+  background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass {
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+}
+
+.preloader {
+  background: #0a0f16;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.disappear {
+  animation: vanish 5s forwards;
+}
+
+@keyframes vanish {
+  100% {
+    opacity: 0%;
+    visibility: hidden;
+  }
+}
