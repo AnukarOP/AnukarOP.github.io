@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP Hawk - Request Interceptor</title>
+    <link rel="icon" type="image/png" href="icons/icon48.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        header {
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        .logo-nav {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-nav img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .logo-nav span {
+            font-weight: 600;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        nav a {
+            color: #888;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        /* Main Content */
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .icon-container {
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .icon-container img {
+            width: 120px;
+            height: 120px;
+            filter: drop-shadow(0 0 60px rgba(255, 107, 53, 0.3));
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+
+        h1 span {
+            color: #ff6b35;
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: #888;
+            font-weight: 400;
+            max-width: 500px;
+            line-height: 1.6;
+            margin-bottom: 48px;
+        }
+
+        /* CTA Buttons */
+        .cta-container {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #fff;
+            color: #0a0a0a;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.2s;
+        }
+
+        .btn-primary:hover {
+            background: #f0f0f0;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-primary svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #888;
+            padding: 14px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            border: 1px solid #333;
+            transition: all 0.2s;
+        }
+
+        .btn-secondary:hover {
+            color: #fff;
+            border-color: #555;
+        }
+
+        /* Features */
+        .features {
+            display: flex;
+            gap: 48px;
+            margin-top: 80px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .feature {
+            text-align: center;
+            max-width: 200px;
+        }
+
+        .feature-icon {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .feature h3 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .feature p {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            padding: 24px 40px;
+            border-top: 1px solid #1a1a1a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-links a {
+            color: #666;
+            text-decoration: none;
+            font-size: 13px;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: #fff;
+        }
+
+        .copyright {
+            color: #444;
+            font-size: 13px;
+        }
+
+        .copyright a {
+            color: #ff6b35;
+            text-decoration: none;
+        }
+
+        .copyright a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header {
+                padding: 16px 20px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .tagline {
+                font-size: 16px;
+            }
+
+            .cta-container {
+                flex-direction: column;
+            }
+
+            .features {
+                gap: 32px;
+            }
+
+            footer {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-nav">
+            <img src="icons/icon48.png" alt="HTTP Hawk">
+            <span>HTTP Hawk</span>
+        </div>
+        <nav>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="icon-container">
+            <img src="icons/icon128.png" alt="HTTP Hawk Icon">
+        </div>
+
+        <h1>HTTP <span>Hawk</span></h1>
+        <p class="tagline">Catch and edit HTTP requests on the fly. No proxy setup needed. Just click and intercept.</p>
+
+        <div class="cta-container">
+            <a href="https://chrome.google.com/webstore" class="btn-primary" target="_blank">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C8.21 0 4.831 1.757 2.632 4.501l3.953 6.848A5.454 5.454 0 0 1 12 6.545h10.691A12 12 0 0 0 12 0zM1.931 5.47A11.943 11.943 0 0 0 0 12c0 6.012 4.42 10.991 10.189 11.864l3.953-6.847a5.45 5.45 0 0 1-6.865-2.29zm13.342 2.166a5.446 5.446 0 0 1 1.45 7.09l.002.001h-.002l-3.952 6.848a12.014 12.014 0 0 0 9.229-9.006zM12 16.364a4.364 4.364 0 1 1 0-8.728 4.364 4.364 0 0 1 0 8.728z"/>
+                </svg>
+                Add to Chrome
+            </a>
+            <a href="privacy-policy.html" class="btn-secondary">
+                Privacy Policy
+            </a>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <h3>Zero Config</h3>
+                <p>No proxy setup or certificates required</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🎯</div>
+                <h3>Real-Time</h3>
+                <p>Intercept and modify requests instantly</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔒</div>
+                <h3>Private</h3>
+                <p>All data stays in your browser</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="mailto:contact@anukar.tech">Contact</a>
+        </div>
+        <div class="copyright">
+            Made with ❤️ by <a href="https://anukar.tech" target="_blank">Anukar.tech</a>
+        </div>
+    </footer>
+</body>
+</html>
