@@ -1,762 +1,2046 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	  <!-- Ezoic Code -->
-	
-    <!--Title-->
-    <title>Anukar's Personal Portfolio Site | Know About Me, Myself & I</title>
-    <link rel="icon" type="image/png" href="https://i.ibb.co/cXY6fjr/image.png" />
-
-    <!--TailwindCSS , Font Awesome & Twitter Emojis-->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" />
-    <link href="https://rawgit.com/ellekasai/twemoji-awesome/gh-pages/twemoji-awesome.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-VhBcF/php0Z/P5ZxlxaEx1GwqTQVIBu4G4giRWxTKOCjTxsPFETUDdVL5B6vYvOt" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="manifest" href="anaxes.webmanifest">
-   
-
-	  <meta charset="UTF-8" />
-    <meta name="“robots”" content="“INDEX," FOLLOW” />
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content="Gatsby 2.20.14" />
-    <!--CSS-->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    
+    <title>Anukar | Creative Web Developer & Cyber Security Expert | Portfolio</title>
+    <meta name="title" content="Anukar | Creative Web Developer & Cyber Security Expert | Portfolio" />
+    <meta name="description" content="Anukar is a passionate Web Developer, Programmer & Cyber Security Expert. Building innovative digital experiences, tools, bots, and secure web applications. View projects like AnyHost, and more...He is also a Chrome extension developer!" />
+    <meta name="keywords" content="Anukar,chrome extension developer, web developer, cyber security, programmer, portfolio, frontend developer, full stack, javascript, react, vue, nodejs, telegram bots, discord bots, web security, ethical hacking, tools developer" />
+    <meta name="author" content="Anukar" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Anukar" />
+    <meta name="application-name" content="Anukar's Portfolio" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://anukar.tech/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://anukar.tech/" />
+    <meta property="og:title" content="Anukar | Creative Web Developer & Cyber Security Expert" />
+    <meta property="og:description" content="Passionate Web Developer, Programmer & Cyber Security Expert. Building innovative digital experiences, tools, and secure web applications." />
+    <meta property="og:image" content="https://i.ibb.co/cXY6fjr/image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Anukar's Portfolio" />
+    <meta property="og:site_name" content="Anukar's Portfolio" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://anukar.tech/" />
+    <meta name="twitter:title" content="Anukar | Creative Web Developer & Cyber Security Expert" />
+    <meta name="twitter:description" content="Passionate Web Developer, Programmer & Cyber Security Expert. Building innovative digital experiences and secure web applications." />
+    <meta name="twitter:image" content="https://i.ibb.co/cXY6fjr/image.png" />
+    <meta name="twitter:creator" content="@AnukarOP" />
+    <meta name="twitter:site" content="@AnukarOP" />
+
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/png" href="https://i.ibb.co/cXY6fjr/image.png" />
+    <link rel="apple-touch-icon" href="https://i.ibb.co/cXY6fjr/image.png" />
+    <link rel="shortcut icon" type="image/png" href="https://i.ibb.co/cXY6fjr/image.png" />
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://i.ibb.co" />
+
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Anukar",
+      "url": "https://anukar.tech/",
+      "image": "https://i.ibb.co/cXY6fjr/image.png",
+      "description": "Creative Web Developer, Programmer & Cyber Security Expert",
+      "jobTitle": "Web Developer & Cyber Security Expert",
+      "knowsAbout": ["Web Development", "JavaScript", "React", "Vue.js", "Node.js", "Cyber Security", "Telegram Bots", "Discord Bots"],
+      "sameAs": [
+        "https://github.com/AnukarOP",
+        "https://telegram.me/AnukarOP"
+      ],
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://anukar.tech/"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Anukar Portfolio",
+      "url": "https://anukar.tech/",
+      "description": "Portfolio of Anukar - Web Developer & Cyber Security Expert",
+      "author": {
+        "@type": "Person",
+        "name": "Anukar
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Featured Projects",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "AnyHost",
+            "description": "Host Static sites under 2 seconds! Lightning fast deployment.",
+            "url": "https://www.anyhost.tech",
+            "applicationCategory": "WebApplication"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "SocialNeon",
+            "description": "Ultimate Social Media Platform with tons of features.",
+            "applicationCategory": "SocialNetworkingApplication"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "YouTube Playback",
+            "description": "Custom playback speeds from 2.25x to 16x.",
+            "url": "https://youtube-playback.space",
+            "applicationCategory": "BrowserExtension"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+      :root {
+        --glass-bg: rgba(255, 255, 255, 0.03);
+        --glass-border: rgba(255, 255, 255, 0.08);
+        --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        --text-primary: rgba(255, 255, 255, 0.95);
+        --text-secondary: rgba(255, 255, 255, 0.6);
+        --text-tertiary: rgba(255, 255, 255, 0.4);
+        --accent-blue: #0A84FF;
+        --accent-purple: #BF5AF2;
+        --accent-pink: #FF375F;
+        --accent-cyan: #64D2FF;
+        --accent-green: #30D158;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background: #000;
+        color: var(--text-primary);
+        overflow-x: hidden;
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 255, 255, 0.25);
+      }
+
+      ::selection {
+        background: rgba(10, 132, 255, 0.4);
+        color: #fff;
+      }
+
+      /* ===== BACKGROUND SYSTEM ===== */
+      .bg-base {
+        position: fixed;
+        inset: 0;
+        z-index: -3;
+        background: linear-gradient(180deg, 
+          #000000 0%, 
+          #0a0a0f 20%,
+          #0d0d15 40%,
+          #0a0a12 60%,
+          #050508 80%,
+          #000000 100%
+        );
+      }
+
+      /* Mesh Gradient Orbs */
+      .gradient-orb {
+        position: fixed;
+        border-radius: 50%;
+        filter: blur(80px);
+        opacity: 0.5;
+        z-index: -2;
+        animation: orbFloat 20s ease-in-out infinite;
+      }
+
+      .orb-1 {
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, rgba(191, 90, 242, 0.4) 0%, transparent 70%);
+        top: -200px;
+        right: -100px;
+        animation-delay: 0s;
+      }
+
+      .orb-2 {
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(circle, rgba(10, 132, 255, 0.35) 0%, transparent 70%);
+        bottom: -150px;
+        left: -100px;
+        animation-delay: -7s;
+      }
+
+      .orb-3 {
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(circle, rgba(100, 210, 255, 0.3) 0%, transparent 70%);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation-delay: -14s;
+      }
+
+      @keyframes orbFloat {
+        0%, 100% { transform: translate(0, 0) scale(1); }
+        25% { transform: translate(30px, -30px) scale(1.05); }
+        50% { transform: translate(-20px, 20px) scale(0.95); }
+        75% { transform: translate(20px, 30px) scale(1.02); }
+      }
+
+      .orb-3 {
+        animation-name: orbFloatCenter;
+      }
+
+      @keyframes orbFloatCenter {
+        0%, 100% { transform: translate(-50%, -50%) scale(1); }
+        25% { transform: translate(-45%, -55%) scale(1.05); }
+        50% { transform: translate(-55%, -45%) scale(0.95); }
+        75% { transform: translate(-48%, -52%) scale(1.02); }
+      }
+
+      /* Noise Texture Overlay */
+      .noise-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        opacity: 0.03;
+        pointer-events: none;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      }
+
+      /* ===== GLASSMORPHISM SYSTEM ===== */
+      .glass {
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.05) 0%,
+          rgba(255, 255, 255, 0.02) 50%,
+          rgba(255, 255, 255, 0.03) 100%
+        );
+        backdrop-filter: blur(40px) saturate(150%);
+        -webkit-backdrop-filter: blur(40px) saturate(150%);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 
+          0 8px 32px rgba(0, 0, 0, 0.3),
+          inset 0 1px 0 rgba(255, 255, 255, 0.1),
+          inset 0 -1px 0 rgba(255, 255, 255, 0.02);
+      }
+
+      .glass-card {
+        background: linear-gradient(
+          165deg,
+          rgba(255, 255, 255, 0.08) 0%,
+          rgba(255, 255, 255, 0.03) 40%,
+          rgba(255, 255, 255, 0.01) 100%
+        );
+        backdrop-filter: blur(40px) saturate(180%);
+        -webkit-backdrop-filter: blur(40px) saturate(180%);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 24px;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+
+      /* Glass Reflection Effect */
+      .glass-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50%;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.08) 0%,
+          rgba(255, 255, 255, 0.02) 50%,
+          transparent 100%
+        );
+        pointer-events: none;
+        border-radius: 24px 24px 0 0;
+      }
+
+      /* Glass Shine on Hover */
+      .glass-card::after {
+        content: '';
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        width: 300%;
+        height: 300%;
+        background: linear-gradient(
+          45deg,
+          transparent 40%,
+          rgba(255, 255, 255, 0.03) 50%,
+          transparent 60%
+        );
+        transition: all 0.6s ease;
+        pointer-events: none;
+      }
+
+      .glass-card:hover::after {
+        top: -50%;
+        left: -50%;
+      }
+
+      .glass-card:hover {
+        transform: translateY(-8px);
+        border-color: rgba(255, 255, 255, 0.15);
+        box-shadow: 
+          0 20px 60px rgba(0, 0, 0, 0.4),
+          0 0 0 1px rgba(255, 255, 255, 0.1),
+          inset 0 1px 0 rgba(255, 255, 255, 0.15);
+      }
+
+      /* ===== MINIMAL FLOATING NAVBAR ===== */
+      .navbar {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 8px;
+        border-radius: 50px;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.1) 0%,
+          rgba(255, 255, 255, 0.05) 100%
+        );
+        backdrop-filter: blur(30px) saturate(180%);
+        -webkit-backdrop-filter: blur(30px) saturate(180%);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        box-shadow: 
+          0 4px 24px rgba(0, 0, 0, 0.3),
+          inset 0 1px 0 rgba(255, 255, 255, 0.15);
+      }
+
+      .nav-item {
+        padding: 8px 16px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--text-secondary);
+        transition: all 0.25s ease;
+        position: relative;
+      }
+
+      .nav-item:hover {
+        color: var(--text-primary);
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .nav-item.active {
+        color: var(--text-primary);
+        background: rgba(255, 255, 255, 0.12);
+      }
+
+      /* Mobile navbar */
+      @media (max-width: 640px) {
+        .navbar {
+          top: 12px;
+          padding: 4px 6px;
+          gap: 2px;
+        }
+
+        .nav-item {
+          padding: 6px 10px;
+          font-size: 12px;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .nav-item {
+          padding: 6px 8px;
+          font-size: 11px;
+        }
+      }
+
+      /* ===== INTERACTIVE PLAYGROUND ===== */
+      .playground-section {
+        padding: 80px 24px;
+        position: relative;
+      }
+
+      .playground-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .playground-header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .playground-hint {
+        font-size: 13px;
+        color: var(--text-tertiary);
+        margin-top: 8px;
+      }
+
+      .playground-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 24px;
+      }
+
+      /* Interactive Canvas */
+      .canvas-box {
+        padding: 20px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .canvas-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+      }
+
+      .canvas-title {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--text-primary);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .canvas-title i {
+        color: var(--accent-purple);
+      }
+
+      .canvas-tools {
+        display: flex;
+        gap: 8px;
+      }
+
+      .canvas-tool {
+        width: 28px;
+        height: 28px;
+        border-radius: 6px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.05);
+        color: var(--text-secondary);
+        font-size: 12px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease;
+      }
+
+      .canvas-tool:hover, .canvas-tool.active {
+        background: rgba(255, 255, 255, 0.15);
+        color: var(--text-primary);
+        border-color: rgba(255, 255, 255, 0.2);
+      }
+
+      .drawing-canvas {
+        width: 100%;
+        height: 200px;
+        border-radius: 12px;
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px dashed rgba(255, 255, 255, 0.15);
+        cursor: crosshair;
+      }
+
+      /* Draggable Shapes */
+      .shapes-area {
+        width: 100%;
+        height: 200px;
+        border-radius: 12px;
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px dashed rgba(255, 255, 255, 0.15);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .draggable-shape {
+        position: absolute;
+        cursor: grab;
+        transition: box-shadow 0.2s ease;
+        user-select: none;
+      }
+
+      .draggable-shape:active {
+        cursor: grabbing;
+      }
+
+      .draggable-shape:hover {
+        box-shadow: 0 0 20px rgba(191, 90, 242, 0.5);
+      }
+
+      .shape-circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+      }
+
+      .shape-square {
+        width: 45px;
+        height: 45px;
+        border-radius: 8px;
+        background: linear-gradient(135deg, var(--accent-pink), var(--accent-purple));
+      }
+
+      .shape-triangle {
+        width: 0;
+        height: 0;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-bottom: 45px solid var(--accent-cyan);
+      }
+
+      /* Notes Area */
+      .notes-box {
+        padding: 20px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .notes-textarea {
+        width: 100%;
+        height: 150px;
+        padding: 16px;
+        border-radius: 12px;
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: var(--text-primary);
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        resize: none;
+        outline: none;
+        transition: border-color 0.2s ease;
+      }
+
+      .notes-textarea::placeholder {
+        color: var(--text-tertiary);
+      }
+
+      .notes-textarea:focus {
+        border-color: rgba(191, 90, 242, 0.5);
+      }
+
+      /* Color Picker */
+      .color-picker {
+        display: flex;
+        gap: 8px;
+        margin-top: 12px;
+      }
+
+      .color-option {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: all 0.2s ease;
+      }
+
+      .color-option:hover, .color-option.active {
+        transform: scale(1.2);
+        border-color: #fff;
+      }
+
+      /* Editable Text */
+      .editable-box {
+        padding: 20px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .editable-content {
+        padding: 16px;
+        border-radius: 12px;
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        min-height: 120px;
+        color: var(--text-primary);
+        font-size: 14px;
+        line-height: 1.6;
+        outline: none;
+        transition: border-color 0.2s ease;
+      }
+
+      .editable-content:focus {
+        border-color: rgba(10, 132, 255, 0.5);
+      }
+
+      .editable-content:empty::before {
+        content: 'Click here and type anything... it\'s your space!';
+        color: var(--text-tertiary);
+      }
+
+      /* Slider Widget */
+      .slider-widget {
+        padding: 20px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .slider-display {
+        text-align: center;
+        padding: 20px;
+        border-radius: 12px;
+        background: rgba(0, 0, 0, 0.3);
+        margin-bottom: 16px;
+      }
+
+      .slider-value {
+        font-size: 48px;
+        font-weight: 700;
+        background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .slider-label {
+        font-size: 12px;
+        color: var(--text-tertiary);
+        margin-top: 4px;
+      }
+
+      .custom-slider {
+        width: 100%;
+        height: 8px;
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.1);
+        outline: none;
+        -webkit-appearance: none;
+        cursor: pointer;
+      }
+
+      .custom-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+        cursor: pointer;
+        box-shadow: 0 2px 10px rgba(191, 90, 242, 0.5);
+      }
+
+      /* Counter Widget */
+      .counter-widget {
+        padding: 20px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        text-align: center;
+      }
+
+      .counter-display {
+        font-size: 64px;
+        font-weight: 800;
+        background: linear-gradient(135deg, var(--accent-green), var(--accent-cyan));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin: 16px 0;
+      }
+
+      .counter-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .counter-btn {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.05);
+        color: var(--text-primary);
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .counter-btn:hover {
+        background: rgba(255, 255, 255, 0.15);
+        transform: scale(1.05);
+      }
+
+      .counter-btn:active {
+        transform: scale(0.95);
+      }
+
+      /* ===== HERO SECTION ===== */
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 120px 24px 80px;
+        position: relative;
+      }
+
+      .hero-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 16px;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 100px;
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--text-secondary);
+        margin-bottom: 24px;
+      }
+
+      .hero-badge-dot {
+        width: 8px;
+        height: 8px;
+        background: var(--accent-green);
+        border-radius: 50%;
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      @keyframes pulse {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.5; transform: scale(1.2); }
+      }
+
+      .hero-title {
+        font-size: clamp(48px, 10vw, 96px);
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        line-height: 1;
+        margin-bottom: 24px;
+        background: linear-gradient(
+          135deg,
+          #ffffff 0%,
+          rgba(255, 255, 255, 0.8) 50%,
+          rgba(255, 255, 255, 0.6) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .hero-subtitle {
+        font-size: clamp(18px, 3vw, 24px);
+        font-weight: 400;
+        color: var(--text-secondary);
+        line-height: 1.6;
+        max-width: 600px;
+        margin-bottom: 16px;
+      }
+
+      .hero-role {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 40px;
+      }
+
+      .hero-role span {
+        display: inline-block;
+        padding: 6px 14px;
+        margin: 4px;
+        background: linear-gradient(135deg, rgba(10, 132, 255, 0.15), rgba(191, 90, 242, 0.15));
+        border: 1px solid rgba(10, 132, 255, 0.2);
+        border-radius: 100px;
+        color: var(--accent-cyan);
+        font-size: 14px;
+      }
+
+      /* Social Buttons */
+      .social-buttons {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .social-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 14px 24px;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.1) 0%,
+          rgba(255, 255, 255, 0.05) 100%
+        );
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 14px;
+        color: var(--text-primary);
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(20px);
+      }
+
+      .social-btn:hover {
+        background: rgba(255, 255, 255, 0.15);
+        border-color: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      .social-btn i {
+        font-size: 18px;
+        opacity: 0.9;
+      }
+
+      /* Hero Image */
+      .hero-image-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hero-image-glow {
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: radial-gradient(
+          circle,
+          rgba(191, 90, 242, 0.3) 0%,
+          rgba(10, 132, 255, 0.2) 40%,
+          transparent 70%
+        );
+        filter: blur(60px);
+        animation: glowPulse 4s ease-in-out infinite;
+      }
+
+      @keyframes glowPulse {
+        0%, 100% { opacity: 0.6; transform: scale(1); }
+        50% { opacity: 0.8; transform: scale(1.05); }
+      }
+
+      .hero-image {
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero-image img {
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 32px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 
+          0 32px 64px rgba(0, 0, 0, 0.4),
+          inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      }
+
+      /* Floating Elements */
+      .floating-element {
+        position: absolute;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.1) 0%,
+          rgba(255, 255, 255, 0.05) 100%
+        );
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        padding: 12px 16px;
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--text-secondary);
+        animation: float 6s ease-in-out infinite;
+        z-index: 2;
+      }
+
+      .floating-element.top-right {
+        top: -20px;
+        right: -40px;
+        animation-delay: -2s;
+      }
+
+      .floating-element.bottom-left {
+        bottom: -20px;
+        left: -40px;
+        animation-delay: -4s;
+      }
+
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+
+      /* ===== SECTIONS ===== */
+      .section {
+        padding: 100px 24px;
+        position: relative;
+      }
+
+      .section-header {
+        margin-bottom: 60px;
+      }
+
+      .section-label {
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--accent-blue);
+        margin-bottom: 12px;
+      }
+
+      .section-title {
+        font-size: clamp(32px, 5vw, 48px);
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        color: var(--text-primary);
+        margin-bottom: 16px;
+      }
+
+      .section-subtitle {
+        font-size: 17px;
+        color: var(--text-secondary);
+        max-width: 500px;
+        line-height: 1.6;
+      }
+
+      /* ===== PROJECT CARDS ===== */
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        gap: 24px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 400px) {
+        .projects-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .project-card {
+        padding: 28px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .project-card .content {
+        position: relative;
+        z-index: 1;
+      }
+
+      .project-icon {
+        width: 56px;
+        height: 56px;
+        border-radius: 16px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+      }
+
+      .project-icon img {
+        width: 32px;
+        height: 32px;
+        object-fit: contain;
+      }
+
+      .project-card:hover .project-icon {
+        transform: scale(1.05);
+        border-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px rgba(10, 132, 255, 0.2);
+      }
+
+      .project-role {
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--accent-blue);
+        margin-bottom: 8px;
+      }
+
+      .project-title {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--text-primary);
+        margin-bottom: 8px;
+        transition: color 0.3s ease;
+      }
+
+      .project-card:hover .project-title {
+        color: var(--accent-cyan);
+      }
+
+      .project-desc {
+        font-size: 14px;
+        color: var(--text-secondary);
+        line-height: 1.6;
+      }
+
+      .project-arrow {
+        position: absolute;
+        top: 28px;
+        right: 28px;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-tertiary);
+        font-size: 14px;
+        opacity: 0;
+        transform: translate(-8px, 8px);
+        transition: all 0.3s ease;
+      }
+
+      .project-card:hover .project-arrow {
+        opacity: 1;
+        transform: translate(0, 0);
+        background: rgba(255, 255, 255, 0.1);
+        color: var(--text-primary);
+      }
+
+      /* ===== TECH STACK ===== */
+      .tech-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 16px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .tech-card {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .tech-icon {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      .tech-icon img, .tech-icon svg {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .tech-name {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--text-primary);
+      }
+
+      /* ===== AVAILABILITY ===== */
+      .availability-wrapper {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+
+      .availability-card {
+        padding: 32px;
+      }
+
+      .availability-grid {
+        display: grid;
+        grid-template-columns: auto repeat(7, 1fr);
+        gap: 12px;
+        margin-bottom: 24px;
+      }
+
+      .availability-header {
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--text-tertiary);
+        text-align: center;
+      }
+
+      .availability-time {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .availability-dot {
+        width: 28px;
+        height: 28px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        cursor: default;
+      }
+
+      .availability-dot:hover {
+        transform: scale(1.1);
+      }
+
+      .availability-dot.available {
+        background: linear-gradient(135deg, #30D158, #34C759);
+        box-shadow: 0 4px 16px rgba(48, 209, 88, 0.4);
+      }
+
+      .availability-dot.unavailable {
+        background: linear-gradient(135deg, #FF453A, #FF6961);
+        box-shadow: 0 4px 16px rgba(255, 69, 58, 0.3);
+      }
+
+      .status-legend {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+      }
+
+      .status-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        color: var(--text-secondary);
+      }
+
+      .status-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 4px;
+      }
+
+      .status-dot.available {
+        background: #30D158;
+      }
+
+      .status-dot.unavailable {
+        background: #FF453A;
+      }
+
+      /* ===== FOOTER ===== */
+      .footer {
+        padding: 60px 24px 40px;
+        text-align: center;
+        position: relative;
+      }
+
+      .footer::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      }
+
+      .footer-text {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--text-secondary);
+      }
+
+      .footer-sub {
+        font-size: 13px;
+        color: var(--text-tertiary);
+        margin-top: 8px;
+      }
+
+      /* ===== SCROLL ANIMATIONS ===== */
+      .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* ===== LOADING ===== */
+      .loader {
+        position: fixed;
+        inset: 0;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10000;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+      }
+
+      .loader.hidden {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .loader-spinner {
+        width: 40px;
+        height: 40px;
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        border-top-color: var(--accent-blue);
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        100% { transform: rotate(360deg); }
+      }
+
+      /* ===== BACK TO TOP ===== */
+      .back-to-top {
+        position: fixed;
+        bottom: 32px;
+        right: 32px;
+        width: 48px;
+        height: 48px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 14px;
+        color: var(--text-primary);
+        font-size: 16px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: all 0.3s ease;
+        z-index: 999;
+      }
+
+      .back-to-top.visible {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      .back-to-top:hover {
+        background: rgba(255, 255, 255, 0.15);
+        transform: translateY(-2px);
+      }
+
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 768px) {
+        .hero {
+          padding: 100px 20px 60px;
+        }
+
+        .hero-image img {
+          width: 200px;
+          height: 200px;
+        }
+
+        .section {
+          padding: 60px 20px;
+        }
+
+        .floating-element {
+          display: none;
+        }
+
+        .back-to-top {
+          bottom: 20px;
+          right: 20px;
+          width: 44px;
+          height: 44px;
+        }
+      }
+    </style>
   </head>
 
-  <body style="background-color: #0a0f16;">
-  
- 
-<div class="px-4 py-4 max-w-6xl mx-auto container mt-20 px-2">
-      <div class="lg:flex items-center">
-        <div class="w-full text-center lg:text-left lg:w-2/3">
-          <div class="font-bold text-3xl"><span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-500 hover:from-blue-500 hover:to-green-400">AnukarOP</span></div>
-          <div class="font-semibold text-lg text-gray-500">
-          { Programmer, Web Developer & Cyber Security Expert }
-</div>
+  <body>
+    <!-- Loading -->
+    <div class="loader" id="loader">
+      <div class="loader-spinner"></div>
+    </div>
 
-          <div class="sm:w-full md:w-4/5 lg:w-full mx-auto font-regular text-lg text-gray-600 mt-12">
-            Hey, Myself Anukar, A Young Web Developer & Cyber Security Expert!<br />
-          
-            <br />
-          
-            Contact via
-            <a rel="noopener noreferrer" href="https://telegram.me/AnukarOP/" class="twitter2 font-bold" target="_blank"> <i class="fab fa-telegram"></i>&nbsp;<span class="discord2">@AnukarOP</span>&nbsp;<i class="fad fa-external-link"></i> </a>
-            &nbsp;&&nbsp;
-            <a rel="noopener noreferrer" href="https://github.com/AnukarOP" class="font-bold" target="_blank"> <i class="fab fa-github"></i>&nbsp;<span class="discord2">AnukarOP</span>&nbsp;<i class="fad fa-external-link"></i> </a>
-          <br />
-		  <br />
+    <!-- Background -->
+    <div class="bg-base"></div>
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+    <div class="noise-overlay"></div>
+
+    <!-- Minimal Floating Navbar -->
+    <nav class="navbar" id="navbar">
+      <a href="#home" class="nav-item active">Home</a>
+      <a href="#projects" class="nav-item">Projects</a>
+      <a href="#skills" class="nav-item">Skills</a>
+      <a href="#playground" class="nav-item">Play</a>
+      <a href="#availability" class="nav-item">Availability</a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div class="text-center lg:text-left fade-in">
+            <div class="hero-badge">
+              <div class="hero-badge-dot"></div>
+              Available for work
+            </div>
             
-            <br />
-            <div id="lanyard_status"></div>
+            <h1 class="hero-title">Anukar</h1>
+            
+            <p class="hero-subtitle">
+              Building digital experiences that push boundaries. A passionate guy crafting innovative solutions.
+            </p>
+
+            <div class="hero-role">
+              <span>Web Developer</span>
+              <span>Cyber Security</span>
+              <span>Tools Expert</span>
+            </div>
+
+            <div class="social-buttons">
+              <a href="https://telegram.me/AnukarOP/" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <i class="fab fa-telegram"></i>
+                Telegram
+              </a>
+              <a href="https://github.com/AnukarOP" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <i class="fab fa-github"></i>
+                GitHub
+              </a>
+            </div>
           </div>
-	      </div>
-	      <!-- Ezoic Code -->
-	<script>var ezoicId = 435878;</script>
-	<script type="text/javascript" src="//go.ezoic.net/ezoic/ezoic.js"></script>
-<!-- Ezoic Code -->
+
+          <div class="flex justify-center lg:justify-end fade-in" style="animation-delay: 0.2s;">
+            <div class="hero-image-container">
+              <div class="hero-image-glow"></div>
+              <div class="hero-image">
+                <div class="floating-element top-right">
+                  <i class="fas fa-code" style="margin-right: 6px; color: var(--accent-blue);"></i> Developer
+                </div>
+                <img 
+                  src="https://media1.giphy.com/media/juua9i2c2fA0AIp2iq/giphy.gif" 
+                  alt="AnukarOP"
+                  draggable="false"
+                />
+                <div class="floating-element bottom-left">
+                  <i class="fas fa-shield-alt" style="margin-right: 6px; color: var(--accent-purple);"></i> Security
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="max-w-7xl mx-auto">
+        <div class="section-header text-center lg:text-left fade-in">
+          <p class="section-label">Portfolio</p>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">A showcase of my work and the problems I've solved</p>
+        </div>
+
+        <div class="projects-grid">
+          <a href="https://www.anyhost.tech" target="_blank" class="glass-card project-card fade-in">
+            <div class="content">
+              <div class="project-icon"><img src="https://i.ibb.co/8gdc7q7w/Any-Host.png" alt="AnyHost" /></div>
+              <p class="project-role">Web Developer</p>
+              <h3 class="project-title">AnyHost</h3>
+              <p class="project-desc">Host Static sites under 2 seconds! Lightning fast deployment.</p>
+            </div>
+            <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+          </a>
+
+          <a href="#" class="glass-card project-card fade-in">
+            <div class="content">
+              <div class="project-icon"><img src="https://i.ibb.co/ZSnFbwz/social-neon-svg.png" alt="SocialNeon" /></div>
+              <p class="project-role">Web Designer</p>
+              <h3 class="project-title">SocialNeon</h3>
+              <p class="project-desc">Ultimate Social Media Platform with tons of features.</p>
+            </div>
+            <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+          </a>
+
+          <a href="https://github.com/AnukarOP/Multi-CC" target="_blank" class="glass-card project-card fade-in">
+            <div class="content">
+              <div class="project-icon"><img src="https://i.ibb.co/TH0M1p2/image.png" alt="Multi-CC" /></div>
+              <p class="project-role">Tools Developer</p>
+              <h3 class="project-title">Multi-CC</h3>
+              <p class="project-desc">Generate & Validate CC for security testing purposes.</p>
+            </div>
+            <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+          </a>
+
+          <a href="https://github.com/AnukarOP/Nitro-Checker-and-Generator" target="_blank" class="glass-card project-card fade-in">
+            <div class="content">
+              <div class="project-icon"><img src="https://i.ibb.co/vwVhK2v/image.png" alt="Nitro" /></div>
+              <p class="project-role">Tools Developer</p>
+              <h3 class="project-title">Nitro Checker & Gen</h3>
+              <p class="project-desc">Generate Discord Nitros & Check them automatically.</p>
+            </div>
+            <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+          </a>
+
+          <a href="https://streamitup.vercel.in" target="_blank" class="glass-card project-card fade-in">
+            <div class="content">
+              <div class="project-icon"><img src="https://i.ibb.co/T2rhh40/streamit.png" alt="StreamitUP" /></div>
+              <p class="project-role">Programmer</p>
+              <h3 class="project-title">StreamitUP</h3>
+              <p class="project-desc">P2P Screensharing & Chat with no backend server.</p>
+            </div>
+            <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+          </a>
+
+          <a href="https://ManageitUP.vercel.in" target="_blank" class="glass-card project-card fade-in">
+            <div class="content">
+              <div class="project-icon"><img src="https://i.ibb.co/F5YYZgJ/favicon.png" alt="ManageitUP" /></div>
+              <p class="project-role">Web-App Developer</p>
+              <h3 class="project-title">ManageitUP</h3>
+              <p class="project-desc">Manage your Daily Tasks Easily & Efficiently.</p>
+            </div>
+            <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+          </a>
+
+          <a href="https://telegram.me/donotag" target="_blank" class="glass-card project-card fade-in">
+            <div class="content">
+              <div class="project-icon"><img src="https://i.ibb.co/gw6N46g/image.png" alt="Bot" /></div>
+              <p class="project-role">Bots Developer</p>
+              <h3 class="project-title">Bot Expert</h3>
+              <p class="project-desc">Music, Group Management, AI bots & more.</p>
+            </div>
+            <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+          </a>
+
+          <a href="https://github.com/AnukarOP" target="_blank" class="glass-card project-card fade-in">
+            <div class="content">
+              <div class="project-icon"><img src="https://i.ibb.co/tJx0nND/image.png" alt="Cyber" /></div>
+              <p class="project-role">Security Expert</p>
+              <h3 class="project-title">Cyber Expert</h3>
+              <p class="project-desc">Found Bugs & Vulnerabilities in top websites.</p>
+            </div>
+            <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+          </a>
+
+          <a href="https://youtube-playback.space" target="_blank" class="glass-card project-card fade-in">
+            <div class="content">
+              <div class="project-icon"><img src="https://i.ibb.co/k652B2NS/icon48.png" alt="YouTube" /></div>
+              <p class="project-role">Extension Developer</p>
+              <h3 class="project-title">YouTube Playback</h3>
+              <p class="project-desc">Custom playback speeds from 2.25x to 16x.</p>
+            </div>
+            <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+          </a>
+
+          <a href="https://qr-codes-generator.vercel.app/" target="_blank" class="glass-card project-card fade-in">
+            <div class="content">
+              <div class="project-icon"><img src="https://i.ibb.co/gjfC54T/image.png" alt="QR" /></div>
+              <p class="project-role">Tools Developer</p>
+              <h3 class="project-title">QR Code Generator</h3>
+              <p class="project-desc">Generate QR Codes with HTML5, Tailwind & JS.</p>
+            </div>
+            <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+          </a>
+
+          <a href="https://github.com/AnukarOP/Multi-WarpUnlimited" target="_blank" class="glass-card project-card fade-in">
+            <div class="content">
+              <div class="project-icon"><img src="https://i.ibb.co/PWBctyS/image.png" alt="Warp" /></div>
+              <p class="project-role">Tools Expert</p>
+              <h3 class="project-title">Multi-Warp-Unlimited</h3>
+              <p class="project-desc">Unlimited Bandwidth in Cloudflare's 1.1.1.1.</p>
+            </div>
+            <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+          </a>
+
+          <a href="https://github.com/AnukarOP/Unlimited-Quotes-Generator" target="_blank" class="glass-card project-card fade-in">
+            <div class="content">
+              <div class="project-icon"><img src="https://i.ibb.co/gVqPbx2/image.png" alt="Quotes" /></div>
+              <p class="project-role">Web Expert</p>
+              <h3 class="project-title">Quotes Generator</h3>
+              <p class="project-desc">Generate Unlimited Quotes automatically.</p>
+            </div>
+            <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="max-w-7xl mx-auto">
+        <div class="section-header text-center lg:text-left fade-in">
+          <p class="section-label">Expertise</p>
+          <h2 class="section-title">Tech Stack</h2>
+          <p class="section-subtitle">Technologies and tools I work with daily</p>
+        </div>
+
+        <div class="tech-grid">
+          <div class="glass-card tech-card fade-in">
+            <div class="tech-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#EFD81D">
+                <path d="M0 0v512h512V0H0zm274.286 397.714c0 49.84-29.44 74.137-72.057 74.137-38.492 0-60.835-19.931-72.172-43.988l39.177-23.714c7.555 13.405 13.292 24.742 29.783 24.742 13.714 0 24.983-6.182 24.983-30.24V237.714h50.286v160zm113.543 72.995c-44.675 0-73.543-20.16-87.635-48L339.429 400c10.285 16.846 23.714 28.069 47.428 28.069 19.932 0 31.509-8.823 31.509-22.572 0-16.491-11.92-22.331-33.92-32l-12.023-5.166c-34.72-14.765-57.737-33.325-57.737-72.514 0-36.08 27.485-62.434 70.445-62.434 30.595 0 52.572 9.508 68.4 37.348L416 294.857c-8.251-14.777-17.143-20.571-30.926-20.571-14.091 0-23.028 8.937-23.028 20.571 0 14.434 8.937 20.274 29.554 29.212l12.023 5.154c40.903 17.531 63.931 35.428 63.931 75.611.012 43.315-34.011 65.875-79.725 65.875z"/>
+              </svg>
+            </div>
+            <span class="tech-name">JavaScript</span>
+          </div>
+
+          <div class="glass-card tech-card fade-in">
+            <div class="tech-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#dd4b25">
+                <path d="M64 32l34.94 403.21L255.77 480 413 435.15 448 32zm308 132H188l4 51h176l-13.51 151.39L256 394.48l-98.68-28-6.78-77.48h48.26l3.42 39.29L256 343.07l53.42-14.92L315 264H148l-12.59-149.59H376.2z"/>
+              </svg>
+            </div>
+            <span class="tech-name">HTML5</span>
+          </div>
+
+          <div class="glass-card tech-card fade-in">
+            <div class="tech-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#2965F1">
+                <path d="M64 32l34.94 403.21L255.77 480 413 435.15 448 32zm308 132H188l4 51h176l-13.51 151.39L256 394.48l-98.68-28-6.78-77.48h48.26l3.42 39.29L256 343.07l53.42-14.92L315 264H148l-12.59-149.59H376.2z"/>
+              </svg>
+            </div>
+            <span class="tech-name">CSS3</span>
+          </div>
+
+          <div class="glass-card tech-card fade-in">
+            <div class="tech-icon"><img src="https://i.ibb.co/RTTrcZQ/image.png" alt="React" /></div>
+            <span class="tech-name">React</span>
+          </div>
+
+          <div class="glass-card tech-card fade-in">
+            <div class="tech-icon"><img src="https://i.ibb.co/64J07XD/image.png" alt="Vue" /></div>
+            <span class="tech-name">Vue.js</span>
+          </div>
+
+          <div class="glass-card tech-card fade-in">
+            <div class="tech-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#6FA660" viewBox="0 0 512 512">
+                <path d="M429.76 130.07L274.33 36.85a37 37 0 00-36.65 0L82.24 130.06A38.2 38.2 0 0064 162.83V349a38.26 38.26 0 0018.24 32.8L123 406.14l.23.13c20.58 10.53 28.46 10.53 37.59 10.53 32.14 0 52.11-20.8 52.11-54.29V182a8.51 8.51 0 00-8.42-8.58h-22.38a8.51 8.51 0 00-8.42 8.58v180.51a15 15 0 01-6.85 13.07c-5.9 3.6-14.47 2.84-24.14-2.15l-39.06-23.51a1.1 1.1 0 01-.48-.92V165.46a1.32 1.32 0 01.59-1.06l151.84-93a.82.82 0 01.73 0l151.93 93a1.34 1.34 0 01.55 1.1V349a1.28 1.28 0 01-.45 1l-152.06 90.65a1.22 1.22 0 01-.8 0l-38.83-23.06a7.8 7.8 0 00-7.83-.41l-.34.2c-10.72 6.35-13.6 8-23.54 11.62-1.62.59-5.43 2-5.76 5.77s3.29 6.45 6.51 8.32l51.9 31.87a35.67 35.67 0 0018.3 5.07h.58a35.87 35.87 0 0017.83-5.07l155.43-93.13A38.37 38.37 0 00448 349V162.83a38.21 38.21 0 00-18.24-32.76z"/>
+              </svg>
+            </div>
+            <span class="tech-name">Node.js</span>
+          </div>
+
+          <div class="glass-card tech-card fade-in">
+            <div class="tech-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.333 9.933C7.088 6.911 8.978 5.4 12 5.4c4.533 0 5.1 3.4 7.367 3.967 1.511.377 2.833-.189 3.966-1.7-.755 3.022-2.644 4.533-5.666 4.533-4.534 0-5.1-3.4-7.367-3.967-1.511-.378-2.833.189-3.967 1.7zm-5.666 6.8C1.422 13.711 3.31 12.2 6.333 12.2c4.534 0 5.1 3.4 7.367 3.967 1.51.377 2.833-.19 3.967-1.7C16.91 17.489 15.022 19 12 19c-4.533 0-5.1-3.4-7.367-3.967-1.511-.378-2.833.189-3.966 1.7z" fill="url(#tw)"/><defs><linearGradient id="tw" x1=".667" y1="-6.689" x2="23.333" y2="31.089" gradientUnits="userSpaceOnUse"><stop stop-color="#2383AE"/><stop offset="1" stop-color="#6DD7B9"/></linearGradient></defs></svg>
+            </div>
+            <span class="tech-name">Tailwind</span>
+          </div>
+
+          <div class="glass-card tech-card fade-in">
+            <div class="tech-icon"><img src="https://www.svgrepo.com/show/184138/linux.svg" alt="Linux" /></div>
+            <span class="tech-name">Linux</span>
+          </div>
+
+          <div class="glass-card tech-card fade-in">
+            <div class="tech-icon">
+              <svg viewBox="0 0 256 250" xmlns="http://www.w3.org/2000/svg"><path d="M128.00106,0 C57.3172926,0 0,57.3066942 0,128.00106 C0,184.555281 36.6761997,232.535542 87.534937,249.460899 C93.9320223,250.645779 96.280588,246.684165 96.280588,243.303333 C96.280588,240.251045 96.1618878,230.167899 96.106777,219.472176 C60.4967585,227.215235 52.9826207,204.369712 52.9826207,204.369712 C47.1599584,189.574598 38.770408,185.640538 38.770408,185.640538 C27.1568785,177.696113 39.6458206,177.859325 39.6458206,177.859325 C52.4993419,178.762293 59.267365,191.04987 59.267365,191.04987 C70.6837675,210.618423 89.2115753,204.961093 96.5158685,201.690482 C97.6647155,193.417512 100.981959,187.77078 104.642583,184.574357 C76.211799,181.33766 46.324819,170.362144 46.324819,121.315702 C46.324819,107.340889 51.3250588,95.9223682 59.5132437,86.9583937 C58.1842268,83.7344152 53.8029229,70.715562 60.7532354,53.0843636 C60.7532354,53.0843636 71.5019501,49.6441813 95.9626412,66.2049595 C106.172967,63.368876 117.123047,61.9465949 128.00106,61.8978432 C138.879073,61.9465949 149.837632,63.368876 160.067033,66.2049595 C184.49805,49.6441813 195.231926,53.0843636 195.231926,53.0843636 C202.199197,70.715562 197.815773,83.7344152 196.486756,86.9583937 C204.694018,95.9223682 209.660343,107.340889 209.660343,121.315702 C209.660343,170.478725 179.716133,181.303747 151.213281,184.472614 C155.80443,188.444828 159.895342,196.234518 159.895342,208.176593 C159.895342,225.303317 159.746968,239.087361 159.746968,243.303333 C159.746968,246.709601 162.05102,250.70089 168.53925,249.443941 C219.370432,232.499507 256,184.536204 256,128.00106 C256,57.3066942 198.691187,0 128.00106,0 Z" fill="#FFF"/></svg>
+            </div>
+            <span class="tech-name">GitHub</span>
+          </div>
+
+          <div class="glass-card tech-card fade-in">
+            <div class="tech-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="VS Code" /></div>
+            <span class="tech-name">VS Code</span>
+          </div>
+
+          <div class="glass-card tech-card fade-in">
+            <div class="tech-icon"><img src="https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=000000" alt="Canva" /></div>
+            <span class="tech-name">Canva</span>
+          </div>
+
+          <div class="glass-card tech-card fade-in">
+            <div class="tech-icon">
+              <svg viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60.1045 4.8978C55.5792 2.8214 50.7265 1.2916 45.6527 0.41542C45.5603 0.39851 45.468 0.440769 45.4204 0.525289C44.7963 1.6353 44.105 3.0834 43.6209 4.2216C38.1637 3.4046 32.7345 3.4046 27.3892 4.2216C26.905 3.0581 26.1886 1.6353 25.5617 0.525289C25.5141 0.443589 25.4218 0.40133 25.3294 0.41542C20.2584 1.2888 15.4057 2.8186 10.8776 4.8978C10.8384 4.9147 10.8048 4.9429 10.7825 4.9795C1.57795 18.7309 -0.943561 32.1443 0.293408 45.3914C0.299005 45.4562 0.335386 45.5182 0.385761 45.5576C6.45866 50.0174 12.3413 52.7249 18.1147 54.5195C18.2071 54.5477 18.305 54.5139 18.3638 54.4378C19.7295 52.5728 20.9469 50.6063 21.9907 48.5383C22.0523 48.4172 21.9935 48.2735 21.8676 48.2256C19.9366 47.4931 18.0979 46.6 16.3292 45.5858C16.1893 45.5041 16.1781 45.304 16.3068 45.2082C16.679 44.9293 17.0513 44.6391 17.4067 44.3461C17.471 44.2926 17.5606 44.2813 17.6362 44.3151C29.2558 49.6202 41.8354 49.6202 53.3179 44.3151C53.3935 44.2785 53.4831 44.2898 53.5502 44.3433C53.9057 44.6363 54.2779 44.9293 54.6529 45.2082C54.7816 45.304 54.7732 45.5041 54.6333 45.5858C52.8646 46.6197 51.0259 47.4931 49.0921 48.2228C48.9662 48.2707 48.9102 48.4172 48.9718 48.5383C50.038 50.6034 51.2554 52.5699 52.5959 54.435C52.6519 54.5139 52.7526 54.5477 52.845 54.5195C58.6464 52.7249 64.529 50.0174 70.6019 45.5576C70.6551 45.5182 70.6887 45.459 70.6943 45.3942C72.1747 30.0791 68.2147 16.7757 60.1968 4.9823C60.1772 4.9429 60.1437 4.9147 60.1045 4.8978ZM23.7259 37.3253C20.2276 37.3253 17.3451 34.1136 17.3451 30.1693C17.3451 26.225 20.1717 23.0133 23.7259 23.0133C27.308 23.0133 30.1626 26.2532 30.1066 30.1693C30.1066 34.1136 27.28 37.3253 23.7259 37.3253ZM47.3178 37.3253C43.8196 37.3253 40.9371 34.1136 40.9371 30.1693C40.9371 26.225 43.7636 23.0133 47.3178 23.0133C50.9 23.0133 53.7545 26.2532 53.6986 30.1693C53.6986 34.1136 50.9 37.3253 47.3178 37.3253Z" fill="#5865F2"/></svg>
+            </div>
+            <span class="tech-name">Discord</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Playground -->
+    <section class="playground-section" id="playground">
+      <div class="playground-container">
+        <div class="playground-header fade-in">
+          <p class="section-label">Interactive</p>
+          <h2 class="section-title">Your Playground</h2>
+          <p class="playground-hint">🎮 Play around! Draw, drag, type - it's all yours. Refreshing resets everything!</p>
+        </div>
+
+        <div class="playground-grid">
+          <!-- Drawing Canvas -->
+          <div class="canvas-box fade-in">
+            <div class="canvas-header">
+              <span class="canvas-title"><i class="fas fa-paint-brush"></i> Draw Something</span>
+              <div class="canvas-tools">
+                <button class="canvas-tool active" data-tool="draw" title="Draw"><i class="fas fa-pencil-alt"></i></button>
+                <button class="canvas-tool" data-tool="erase" title="Erase"><i class="fas fa-eraser"></i></button>
+                <button class="canvas-tool" id="clear-canvas" title="Clear"><i class="fas fa-trash"></i></button>
+              </div>
+            </div>
+            <canvas class="drawing-canvas" id="drawing-canvas"></canvas>
+            <div class="color-picker">
+              <div class="color-option active" data-color="#BF5AF2" style="background: #BF5AF2;"></div>
+              <div class="color-option" data-color="#0A84FF" style="background: #0A84FF;"></div>
+              <div class="color-option" data-color="#30D158" style="background: #30D158;"></div>
+              <div class="color-option" data-color="#FF375F" style="background: #FF375F;"></div>
+              <div class="color-option" data-color="#FFD60A" style="background: #FFD60A;"></div>
+              <div class="color-option" data-color="#FFFFFF" style="background: #FFFFFF;"></div>
+            </div>
+          </div>
+
+          <!-- Draggable Shapes -->
+          <div class="canvas-box fade-in">
+            <div class="canvas-header">
+              <span class="canvas-title"><i class="fas fa-shapes"></i> Drag & Play</span>
+            </div>
+            <div class="shapes-area" id="shapes-area">
+              <div class="draggable-shape shape-circle" style="top: 30px; left: 40px;"></div>
+              <div class="draggable-shape shape-square" style="top: 80px; left: 150px;"></div>
+              <div class="draggable-shape shape-triangle" style="top: 120px; left: 80px;"></div>
+              <div class="draggable-shape shape-circle" style="top: 40px; left: 220px; background: linear-gradient(135deg, var(--accent-cyan), var(--accent-green)); width: 35px; height: 35px;"></div>
+              <div class="draggable-shape shape-square" style="top: 130px; left: 200px; background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan)); width: 30px; height: 30px;"></div>
+            </div>
+          </div>
+
+          <!-- Notes -->
+          <div class="notes-box fade-in">
+            <div class="canvas-header">
+              <span class="canvas-title"><i class="fas fa-sticky-note"></i> Quick Notes</span>
+            </div>
+            <textarea class="notes-textarea" placeholder="Write anything here... your secret thoughts, ideas, or just random stuff! 🤫"></textarea>
+          </div>
+
+          <!-- Editable Text -->
+          <div class="editable-box fade-in">
+            <div class="canvas-header">
+              <span class="canvas-title"><i class="fas fa-edit"></i> Edit This!</span>
+            </div>
+            <div class="editable-content" contenteditable="true"></div>
+          </div>
+
+          <!-- Slider Widget -->
+          <div class="slider-widget fade-in">
+            <div class="canvas-header">
+              <span class="canvas-title"><i class="fas fa-sliders-h"></i> Mood Meter</span>
+            </div>
+            <div class="slider-display">
+              <div class="slider-value" id="slider-value">50</div>
+              <div class="slider-label">How are you feeling today?</div>
+            </div>
+            <input type="range" class="custom-slider" id="mood-slider" min="0" max="100" value="50">
+          </div>
+
+          <!-- Counter Widget -->
+          <div class="counter-widget fade-in">
+            <div class="canvas-header">
+              <span class="canvas-title"><i class="fas fa-plus-minus"></i> Click Counter</span>
+            </div>
+            <div class="counter-display" id="counter-display">0</div>
+            <div class="counter-buttons">
+              <button class="counter-btn" id="counter-minus">−</button>
+              <button class="counter-btn" id="counter-reset">↺</button>
+              <button class="counter-btn" id="counter-plus">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Availability -->
+    <section class="section" id="availability">
+      <div class="max-w-7xl mx-auto">
+        <div class="section-header text-center fade-in">
+          <p class="section-label">Schedule</p>
+          <h2 class="section-title">Availability</h2>
+          <p class="section-subtitle mx-auto">When I'm usually available for collaboration</p>
+        </div>
+
+        <div class="availability-wrapper">
+          <div class="glass-card availability-card fade-in">
+            <div class="availability-grid">
+              <div></div>
+              <div class="availability-header">M</div>
+              <div class="availability-header">T</div>
+              <div class="availability-header">W</div>
+              <div class="availability-header">T</div>
+              <div class="availability-header">F</div>
+              <div class="availability-header">S</div>
+              <div class="availability-header">S</div>
+
+              <div class="availability-time">🌞</div>
+              <div class="availability-dot unavailable"></div>
+              <div class="availability-dot unavailable"></div>
+              <div class="availability-dot unavailable"></div>
+              <div class="availability-dot unavailable"></div>
+              <div class="availability-dot unavailable"></div>
+              <div class="availability-dot available"></div>
+              <div class="availability-dot unavailable"></div>
+
+              <div class="availability-time">🌇</div>
+              <div class="availability-dot unavailable"></div>
+              <div class="availability-dot unavailable"></div>
+              <div class="availability-dot unavailable"></div>
+              <div class="availability-dot unavailable"></div>
+              <div class="availability-dot unavailable"></div>
+              <div class="availability-dot available"></div>
+              <div class="availability-dot available"></div>
+
+              <div class="availability-time">🌛</div>
+              <div class="availability-dot unavailable"></div>
+              <div class="availability-dot unavailable"></div>
+              <div class="availability-dot unavailable"></div>
+              <div class="availability-dot unavailable"></div>
+              <div class="availability-dot unavailable"></div>
+              <div class="availability-dot unavailable"></div>
+              <div class="availability-dot available"></div>
+            </div>
+
+            <div class="status-legend">
+              <div class="status-item">
+                <div class="status-dot available"></div>
+                <span>Available</span>
+              </div>
+              <div class="status-item">
+                <div class="status-dot unavailable"></div>
+                <span>Unavailable</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer-text">© 2026 AnukarOP</p>
+      <p class="footer-sub">Crafted with precision</p>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+      // Loading
+      window.addEventListener('load', () => {
+        setTimeout(() => document.getElementById('loader').classList.add('hidden'), 500);
+      });
+
+      // ===== MINIMAL NAVBAR =====
+      const navItems = document.querySelectorAll('.nav-item');
+
+      // Active nav item based on scroll
+      const sections = document.querySelectorAll('section[id]');
+      window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY + 150;
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+          const sectionId = section.getAttribute('id');
+          
+          if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            navItems.forEach(item => {
+              item.classList.remove('active');
+              if (item.getAttribute('href') === '#' + sectionId) {
+                item.classList.add('active');
+              }
+            });
+          }
+        });
+      });
+
+      // Scroll animations
+      const fadeElements = document.querySelectorAll('.fade-in');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => entry.target.classList.add('visible'), i * 50);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '-20px' });
+
+      fadeElements.forEach(el => observer.observe(el));
+
+      // Back to top
+      const backToTop = document.getElementById('back-to-top');
+      window.addEventListener('scroll', () => {
+        backToTop.classList.toggle('visible', window.scrollY > 400);
+      });
+
+      backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      });
+
+      // ===== INTERACTIVE PLAYGROUND =====
+      
+      // Drawing Canvas
+      const canvas = document.getElementById('drawing-canvas');
+      const ctx = canvas.getContext('2d');
+      let isDrawing = false;
+      let currentColor = '#BF5AF2';
+      let currentTool = 'draw';
+
+      // Set canvas size
+      function resizeCanvas() {
+        const rect = canvas.getBoundingClientRect();
+        canvas.width = rect.width;
+        canvas.height = rect.height;
+        ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
+      }
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
+
+      // Drawing functions
+      function startDrawing(e) {
+        isDrawing = true;
+        draw(e);
+      }
+
+      function stopDrawing() {
+        isDrawing = false;
+        ctx.beginPath();
+      }
+
+      function draw(e) {
+        if (!isDrawing) return;
         
-        <div class="mx-auto w-1/2 transform hover:scale-110 transition duration-300">
-          <img src="https://media1.giphy.com/media/juua9i2c2fA0AIp2iq/giphy.gif?cid=ecf05e472dvx9dn2k8iickj3by2f708n44p73puib9uiy2s5&ep=v1_stickers_search&rid=giphy.gif" class="hidden md:hidden lg:flex rounded-lg w-3/5 ml-auto mx-auto" alt="My_Logo" draggable="false" style="border-radius: 2.5vw;" />
-        </div>
-      </div>
-      <!--Start of personal projects-->
-      <div class="font-regular flex tracking-widest uppercase text-md text-gray-500 mt-32 mb-6">
-       Projects that I've worked for...
-      </div>
-     
-     
-      <div class="row items-center justify-center mb-8">
-	      <!-- 0 -->
-	       <!--PreMiD Project-->
-        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-            <a rel="noopener noreferrer" href="https://www.anyhost.tech" target="_blank">
-              <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-                <div class="flex items-center">
-                  <div class="flex-initial ml-4 mr-6">
-                    <img src="https://i.ibb.co/8gdc7q7w/Any-Host.png" class="h-10 w-auto" alt="aepp" />
-                  </div>
-                  <div class="flex-initial">
-                    <div class="font-semibold text-md text-gray-600">
-                      Web Developer
-                    </div>
-                    <div class="font-bold text-xl text-blue-500">AnyHost</div>
-                    <div class="font-regular text-xs text-gray-500">
-                      Host Static sites under 2 seconds!
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
+        const rect = canvas.getBoundingClientRect();
+        const x = (e.clientX || e.touches[0].clientX) - rect.left;
+        const y = (e.clientY || e.touches[0].clientY) - rect.top;
+
+        ctx.lineWidth = currentTool === 'erase' ? 20 : 3;
+        ctx.strokeStyle = currentTool === 'erase' ? 'rgba(0,0,0,0.3)' : currentColor;
+        ctx.globalCompositeOperation = currentTool === 'erase' ? 'destination-out' : 'source-over';
+
+        ctx.lineTo(x, y);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(x, y);
+      }
+
+      canvas.addEventListener('mousedown', startDrawing);
+      canvas.addEventListener('mouseup', stopDrawing);
+      canvas.addEventListener('mousemove', draw);
+      canvas.addEventListener('mouseleave', stopDrawing);
+      canvas.addEventListener('touchstart', startDrawing);
+      canvas.addEventListener('touchend', stopDrawing);
+      canvas.addEventListener('touchmove', draw);
+
+      // Color picker
+      document.querySelectorAll('.color-option').forEach(option => {
+        option.addEventListener('click', () => {
+          document.querySelectorAll('.color-option').forEach(o => o.classList.remove('active'));
+          option.classList.add('active');
+          currentColor = option.dataset.color;
+        });
+      });
+
+      // Tool selection
+      document.querySelectorAll('.canvas-tool[data-tool]').forEach(tool => {
+        tool.addEventListener('click', () => {
+          document.querySelectorAll('.canvas-tool[data-tool]').forEach(t => t.classList.remove('active'));
+          tool.classList.add('active');
+          currentTool = tool.dataset.tool;
+        });
+      });
+
+      // Clear canvas
+      document.getElementById('clear-canvas').addEventListener('click', () => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      });
+
+      // ===== DRAGGABLE SHAPES =====
+      const shapesArea = document.getElementById('shapes-area');
+      const shapes = document.querySelectorAll('.draggable-shape');
+      let activeShape = null;
+      let offsetX, offsetY;
+
+      shapes.forEach(shape => {
+        shape.addEventListener('mousedown', startDrag);
+        shape.addEventListener('touchstart', startDrag);
+      });
+
+      function startDrag(e) {
+        activeShape = e.target;
+        const rect = activeShape.getBoundingClientRect();
+        const areaRect = shapesArea.getBoundingClientRect();
         
-        </div>
-	      
-	       <!--Social Neon Project-->
-        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-            <a rel="noopener noreferrer" href="#" target="_blank">
-              <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-                <div class="flex items-center">
-                  <div class="flex-initial ml-4 mr-6">
-                    <img src="https://i.ibb.co/ZSnFbwz/social-neon-svg.png" class="h-10 w-auto" alt="aepp" />
-                  </div>
-                  <div class="flex-initial">
-                    <div class="font-semibold text-md text-gray-600">
-                      Web Designer
-                    </div>
-                    <div class="font-bold text-xl text-blue-500">SocialNeon</div>
-                    <div class="font-regular text-xs text-gray-500">
-                      Ultimate Social Media Platform, with lots of features
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
+        const clientX = e.clientX || e.touches[0].clientX;
+        const clientY = e.clientY || e.touches[0].clientY;
         
-        </div>
-	      <!--dasu-->
-        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-            <a rel="noopener noreferrer" href="https://github.com/AnukarOP/Multi-CC" target="_blank">
-              <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-                <div class="flex items-center">
-                  <div class="flex-initial ml-4 mr-6">
-                    <img src="https://i.ibb.co/TH0M1p2/image.png" class="rounded-md h-12 w-auto" alt="Multi-CC" />
-                  </div>
-                  <div class="flex-initial">
-                    <div class="font-semibold text-md text-gray-600">
-                        Tools Developer
-                      </div>
-                    <div class="font-bold text-xl text-blue-500">Multi-CC </div>
-                    <div class="font-regular text-xs text-gray-500">
-                        Generate & Validate CC for bypassing
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-	       <!--ronin-->
-        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-          <a rel="noopener noreferrer" href="https://github.com/AnukarOP/Nitro-Checker-and-Generator" target="_blank">
-            <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-              <div class="flex items-center">
-                <div class="flex-initial ml-4 mr-6">
-                  <img src="https://i.ibb.co/vwVhK2v/image.png" class="rounded-md h-12 w-auto" alt="Nitro Logo" />
-                </div>
-                <div class="flex-initial">
-                    <div class="font-semibold text-md text-gray-600">
-                       Tools Developer
-                      </div>
-                  <div class="font-bold text-xl text-blue-500">Nitro Checker & Gen.</div>
-                  <div class="font-regular text-xs text-gray-500">
-                    Generate Unlimited Discord Nitros & Check them also.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
+        offsetX = clientX - rect.left;
+        offsetY = clientY - rect.top;
         
-         
-        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-          <a rel="noopener noreferrer" href="https://github.com/AnukarOP/Unlimited-Quotes-Generator" target="_blank">
-            <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-              <div class="flex items-center">
-                <div class="flex-initial ml-4 mr-6">
-                  <img src="https://i.ibb.co/gVqPbx2/image.png" class="rounded-md h-12 w-auto" alt="IBL Logo" />
-                </div>
-                <div class="flex-initial">
-                    <div class="font-semibold text-md text-gray-600">
-                       Web Expert 
-                      </div>
-                  <div class="font-bold text-xl text-blue-500">Quotes-Generator</div>
-                  <div class="font-regular text-xs text-gray-500">
-                    Generate Unlimited Quotes per 10sec. Automatically!
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-	        
-	   
-        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-          <a rel="noopener noreferrer" href="https://streamitup.vercel.in" target="_blank">
-            <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-              <div class="flex items-center">
-                <div class="flex-initial ml-4 mr-6">
-                  <img src="https://i.ibb.co/T2rhh40/streamit.png" class="rounded-md h-12 w-auto" alt="StreamitUP Logo" />
-                </div>
-                <div class="flex-initial">
-                    <div class="font-semibold text-md text-gray-600">
-                       Programmer
-                      </div>
-                  <div class="font-bold text-xl text-blue-500">StreamitUP</div>
-                  <div class="font-regular text-xs text-gray-500">
-                    Peer-2-Peer Screensharing & Chat, Web-app with No backend server!
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-	      
-	       <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-          <a rel="noopener noreferrer" href="https://ManageitUP.vercel.in" target="_blank">
-            <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-              <div class="flex items-center">
-                <div class="flex-initial ml-4 mr-6">
-                  <img src="https://i.ibb.co/F5YYZgJ/favicon.png" class="rounded-md h-12 w-auto" alt="ManageitUP Logo" />
-                </div>
-                <div class="flex-initial">
-                    <div class="font-semibold text-md text-gray-600">
-                       Web-App Developer
-                      </div>
-                  <div class="font-bold text-xl text-blue-500">ManageitUP</div>
-                  <div class="font-regular text-xs text-gray-500">
-                    Manage your Daily Tasks Easily & Efficiently with ManageitUP
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-	      </div>
-	      
-	      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-          <a rel="noopener noreferrer" href="https://telegram.me/donotag" target="_blank">
-            <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-              <div class="flex items-center">
-                <div class="flex-initial ml-4 mr-6">
-                  <img src="https://i.ibb.co/gw6N46g/image.png" class="rounded-md h-12 w-auto" alt="Bot Logo" />
-                </div>
-                <div class="flex-initial">
-                    <div class="font-semibold text-md text-gray-600">
-                       Bots Developer
-                      </div>
-                  <div class="font-bold text-xl text-blue-500">Bot Expert</div>
-                  <div class="font-regular text-xs text-gray-500">
-                    Developed Many Telegram bots, i.e Music bot, Group Management bots, AI bots and Many more...
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
+        activeShape.style.zIndex = 10;
+        e.preventDefault();
+      }
 
+      document.addEventListener('mousemove', drag);
+      document.addEventListener('touchmove', drag);
+
+      function drag(e) {
+        if (!activeShape) return;
         
-
-        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-          <a rel="noopener noreferrer" href="https://github.com/AnukarOP" target="_blank">
-            <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-              <div class="flex items-center">
-                <div class="flex-initial ml-4 mr-6">
-                  <img src="https://i.ibb.co/tJx0nND/image.png" class="rounded-md h-12 w-auto" alt="Cyber expert Logo" />
-                </div>
-                <div class="flex-initial">
-                    <div class="font-semibold text-md text-gray-600">
-                       Cyber Security Expert
-                      </div>
-                  <div class="font-bold text-xl text-blue-500">Cyber Expert</div>
-                  <div class="font-regular text-xs text-gray-500">
-                    Founded Many Bugs & Vulnerabilities in Top sites...
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
- <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-          <a rel="noopener noreferrer" href="https://youtube-playback.space" target="_blank">
-            <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-              <div class="flex items-center">
-                <div class="flex-initial ml-4 mr-6">
-                  <img src="https://i.ibb.co/k652B2NS/icon48.png" class="rounded-md h-12 w-auto" alt="IBL Logo" />
-                </div>
-                <div class="flex-initial">
-                    <div class="font-semibold text-md text-gray-600">
-                       Extension Developer
-                      </div>
-                  <div class="font-bold text-xl text-blue-500">Youtube Playback</div>
-                  <div class="font-regular text-xs text-gray-500">
-                    Adds custom playback to your Youtube videos from 2.25x to 16x.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-       
-        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-          <a rel="noopener noreferrer" href="https://qr-codes-generator.vercel.app/" target="_blank">
-            <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-              <div class="flex items-center">
-                <div class="flex-initial ml-4 mr-6">
-                  <img src="https://i.ibb.co/gjfC54T/image.png" class="rounded-md h-12 w-auto" alt="IBL Logo" />
-                </div>
-                <div class="flex-initial">
-                    <div class="font-semibold text-md text-gray-600">
-                       Tools Developer
-                      </div>
-                  <div class="font-bold text-xl text-blue-500">Qr-Codes-Generator</div>
-                  <div class="font-regular text-xs text-gray-500">
-                    Qr Codes Generator, Made using Html5, Tailwind CSS & Js...
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-	      
-
-        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-          <a rel="noopener noreferrer" href="https://github.com/AnukarOP/Multi-WarpUnlimited" target="_blank">
-            <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-              <div class="flex items-center">
-                <div class="flex-initial ml-4 mr-6">
-                  <img src="https://i.ibb.co/PWBctyS/image.png" class="rounded-md h-12 w-auto" alt="IBL Logo" />
-                </div>
-                <div class="flex-initial">
-                    <div class="font-semibold text-md text-gray-600">
-                       Tools Expert
-                      </div>
-                  <div class="font-bold text-xl text-blue-500">Multi-Warp-Unlimited</div>
-                  <div class="font-regular text-xs text-gray-500">
-                    This tool will Give you Unlimited Bandwidth in 1.1.1.1, Cloudflare's App...
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-</div>
-
-      <!--Technologies that I use-->
-      <div class="text-center lg:text-left font-regular tracking-widest uppercase text-sm text-gray-500 mt-16 mb-6">
-        Technologies I use
-      </div>
-      <div class="row items-center justify-center mb-8">
-        <!--JavaScript-->
-        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-            <div class="flex items-center">
-              <div class="flex-initial ml-4 mr-6">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#EFD81D" class="flex-shrink-0 h-8 w-auto rounded-md">
-                  <path
-                    d="M0 0v512h512V0H0zm274.286 397.714c0 49.84-29.44 74.137-72.057 74.137-38.492 0-60.835-19.931-72.172-43.988l39.177-23.714c7.555 13.405 13.292 24.742 29.783 24.742 13.714 0 24.983-6.182 24.983-30.24V237.714h50.286v160zm113.543 72.995c-44.675 0-73.543-20.16-87.635-48L339.429 400c10.285 16.846 23.714 28.069 47.428 28.069 19.932 0 31.509-8.823 31.509-22.572 0-16.491-11.92-22.331-33.92-32l-12.023-5.166c-34.72-14.765-57.737-33.325-57.737-72.514 0-36.08 27.485-62.434 70.445-62.434 30.595 0 52.572 9.508 68.4 37.348L416 294.857c-8.251-14.777-17.143-20.571-30.926-20.571-14.091 0-23.028 8.937-23.028 20.571 0 14.434 8.937 20.274 29.554 29.212l12.023 5.154c40.903 17.531 63.931 35.428 63.931 75.611.012 43.315-34.011 65.875-79.725 65.875z"
-                  ></path>
-                </svg>
-              </div>
-              <div class="flex-initial">
-                <div class="font-bold text-lg text-white">JavaScript</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--HTML5-->
-        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-            <div class="flex items-center">
-              <div class="flex-initial ml-4 mr-6">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#dd4b25" class="flex-shrink-0 h-8 w-auto rounded-md">
-                  <path d="M64 32l34.94 403.21L255.77 480 413 435.15 448 32zm308 132H188l4 51h176l-13.51 151.39L256 394.48l-98.68-28-6.78-77.48h48.26l3.42 39.29L256 343.07l53.42-14.92L315 264H148l-12.59-149.59H376.2z"></path>
-                </svg>
-              </div>
-              <div class="flex-initial">
-                <div class="font-bold text-lg text-white">HTML5</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- React -->
-        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-            <div class="flex items-center">
-              <div class="flex-initial ml-4 mr-6">
-                <img width="39" height="48" src = "https://i.ibb.co/RTTrcZQ/image.png" alt="My Happy PNG"/>
-            </div>
-            </div>
-            <div class="flex-initial">
-              <div class="font-bold text-lg text-white">React</div>
-            </div>
-          </div>
-        </div>
-        <!--Node.JS-->
-        <!-- temp file lang https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg-->
-        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-            <div class="flex items-center">
-              <div class="flex-initial ml-4 mr-6">
-                <img width="39" height="48" src = "https://www.svgrepo.com/show/184138/linux.svg" alt="My Happy SVG"/>
-            </div>
-            </div>
-            <div class="flex-initial">
-              <div class="font-bold text-lg text-white">Linux</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-            <div class="flex items-center">
-              <div class="flex-initial ml-4 mr-6">
-                <img width="39" height="48" src = "https://i.ibb.co/64J07XD/image.png" alt="My Happy PNG"/>
-            </div>
-            </div>
-            <div class="flex-initial">
-              <div class="font-bold text-lg text-white">Vue</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-            <div class="flex items-center">
-              <div class="flex-initial ml-4 mr-6">
-                <img width="39" height="48" src = "https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=000000" alt="My canva SVG"/>
-            </div>
-            </div>
-            <div class="flex-initial">
-              <div class="font-bold text-lg text-white">Canva</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-            <div class="flex items-center">
-              <div class="flex-initial ml-4 mr-6">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="#6FA660" viewBox="0 0 512 512" class="flex-shrink-0 h-8 w-auto">
-                  <path
-                    d="M429.76 130.07L274.33 36.85a37 37 0 00-36.65 0L82.24 130.06A38.2 38.2 0 0064 162.83V349a38.26 38.26 0 0018.24 32.8L123 406.14l.23.13c20.58 10.53 28.46 10.53 37.59 10.53 32.14 0 52.11-20.8 52.11-54.29V182a8.51 8.51 0 00-8.42-8.58h-22.38a8.51 8.51 0 00-8.42 8.58v180.51a15 15 0 01-6.85 13.07c-5.9 3.6-14.47 2.84-24.14-2.15l-39.06-23.51a1.1 1.1 0 01-.48-.92V165.46a1.32 1.32 0 01.59-1.06l151.84-93a.82.82 0 01.73 0l151.93 93a1.34 1.34 0 01.55 1.1V349a1.28 1.28 0 01-.45 1l-152.06 90.65a1.22 1.22 0 01-.8 0l-38.83-23.06a7.8 7.8 0 00-7.83-.41l-.34.2c-10.72 6.35-13.6 8-23.54 11.62-1.62.59-5.43 2-5.76 5.77s3.29 6.45 6.51 8.32l51.9 31.87a35.67 35.67 0 0018.3 5.07h.58a35.87 35.87 0 0017.83-5.07l155.43-93.13A38.37 38.37 0 00448 349V162.83a38.21 38.21 0 00-18.24-32.76z"
-                  ></path>
-                  <path
-                    d="M307.88 318.05c-37.29 0-45.24-10.42-47.6-27.24a8.43 8.43 0 00-8.22-7.32h-19.8a8.44 8.44 0 00-8.26 8.58c0 14.58 5.12 62.17 83.92 62.17 24.38 0 44.66-5.7 58.63-16.49S388 311.26 388 292.55c0-37.55-24.5-47.83-72.75-54.55-49.05-6.82-49.05-10.29-49.05-17.89 0-5.47 0-18.28 35.46-18.28 25.23 0 38.74 3.19 43.06 20a8.35 8.35 0 008.06 6.67h19.87a8.24 8.24 0 006.16-2.86 8.91 8.91 0 002.12-6.44c-2.57-35.55-28.56-53.58-79.24-53.58-46.06 0-73.55 20.75-73.55 55.5 0 38.1 28.49 48.87 71.29 53.33 50 5.17 50 12.71 50 19.37.03 10.38-4.28 24.23-41.55 24.23z"
-                  ></path>
-                </svg>
-              </div>
-              <div class="flex-initial">
-                <div class="font-bold text-lg text-white">NodeJS</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--TailwindCSS-->
-        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-            <div class="flex items-center">
-              <div class="flex-initial ml-4 mr-6">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-8 w-auto">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M6.333 9.933C7.088 6.911 8.978 5.4 12 5.4c4.533 0 5.1 3.4 7.367 3.967 1.511.377 2.833-.189 3.966-1.7-.755 3.022-2.644 4.533-5.666 4.533-4.534 0-5.1-3.4-7.367-3.967-1.511-.378-2.833.189-3.967 1.7zm-5.666 6.8C1.422 13.711 3.31 12.2 6.333 12.2c4.534 0 5.1 3.4 7.367 3.967 1.51.377 2.833-.19 3.967-1.7C16.91 17.489 15.022 19 12 19c-4.533 0-5.1-3.4-7.367-3.967-1.511-.378-2.833.189-3.966 1.7z"
-                    fill="url(#prefix__paint0_linear)"
-                  ></path>
-                  <defs>
-                    <linearGradient id="prefix__paint0_linear" x1=".667" y1="-6.689" x2="23.333" y2="31.089" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#2383AE"></stop>
-                      <stop offset="1" stop-color="#6DD7B9"></stop>
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </div>
-              <div class="flex-initial">
-                <div class="font-bold text-lg text-white">Tailwind CSS</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--TypeScript-->
-        <!--Photoshop-->
-        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-            <div class="flex items-center">
-              <div class="flex-initial ml-4 mr-6">
-                <?xml version="1.0" encoding="utf-8"?>
-                <svg
-                  version="1.1"
-                  id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px"
-                  y="0px"
-                  viewBox="0 0 240 234"
-                  class="h-8 w-auto"
-                  style="enable-background: new 0 0 240 234;"
-                  xml:space="preserve"
-                >
-                  <style type="text/css">
-                    .st0 {
-                      fill: #001e36;
-                    }
-
-                    .st1 {
-                      fill: #31a8ff;
-                    }
-                  </style>
-                  <g id="Layer_2_1_">
-                    <g id="Surfaces">
-                      <g id="Photo_Surface">
-                        <g id="Outline_no_shadow">
-                          <path
-                            class="st0"
-                            d="M42.5,0h155C221,0,240,19,240,42.5v149c0,23.5-19,42.5-42.5,42.5h-155C19,234,0,215,0,191.5v-149
-					C0,19,19,0,42.5,0z"
-                          />
-                        </g>
-                      </g>
-                    </g>
-                    <g id="Outlined_Mnemonics_Logos">
-                      <g id="Ps">
-                        <path
-                          class="st1"
-                          d="M54,164.1V61.2c0-0.7,0.3-1.1,1-1.1c1.7,0,3.3,0,5.6-0.1c2.4-0.1,4.9-0.1,7.6-0.2c2.7-0.1,5.6-0.1,8.7-0.2
-				c3.1-0.1,6.1-0.1,9.1-0.1c8.2,0,15,1,20.6,3.1c5,1.7,9.6,4.5,13.4,8.2c3.2,3.2,5.7,7.1,7.3,11.4c1.5,4.2,2.3,8.5,2.3,13
-				c0,8.6-2,15.7-6,21.3c-4,5.6-9.6,9.8-16.1,12.2c-6.8,2.5-14.3,3.4-22.5,3.4c-2.4,0-4,0-5-0.1c-1-0.1-2.4-0.1-4.3-0.1v32.1
-				c0.1,0.7-0.4,1.3-1.1,1.4c-0.1,0-0.2,0-0.4,0H55.2C54.4,165.4,54,165,54,164.1z M75.8,79.4V113c1.4,0.1,2.7,0.2,3.9,0.2H85
-				c3.9,0,7.8-0.6,11.5-1.8c3.2-0.9,6-2.8,8.2-5.3c2.1-2.5,3.1-5.9,3.1-10.3c0.1-3.1-0.7-6.2-2.3-8.9c-1.7-2.6-4.1-4.6-7-5.7
-				c-3.7-1.5-7.7-2.1-11.8-2c-2.6,0-4.9,0-6.8,0.1C77.9,79.2,76.5,79.3,75.8,79.4L75.8,79.4z"
-                        />
-                        <path
-                          class="st1"
-                          d="M192,106.9c-3-1.6-6.2-2.7-9.6-3.4c-3.7-0.8-7.4-1.3-11.2-1.3c-2-0.1-4.1,0.2-6,0.7c-1.3,0.3-2.4,1-3.1,2
-				c-0.5,0.8-0.8,1.8-0.8,2.7c0,0.9,0.4,1.8,1,2.6c0.9,1.1,2.1,2,3.4,2.7c2.3,1.2,4.7,2.3,7.1,3.3c5.4,1.8,10.6,4.3,15.4,7.3
-				c3.3,2.1,6,4.9,7.9,8.3c1.6,3.2,2.4,6.7,2.3,10.3c0.1,4.7-1.3,9.4-3.9,13.3c-2.8,4-6.7,7.1-11.2,8.9c-4.9,2.1-10.9,3.2-18.1,3.2
-				c-4.6,0-9.1-0.4-13.6-1.3c-3.5-0.6-7-1.7-10.2-3.2c-0.7-0.4-1.2-1.1-1.1-1.9v-17.4c0-0.3,0.1-0.7,0.4-0.9
-				c0.3-0.2,0.6-0.1,0.9,0.1c3.9,2.3,8,3.9,12.4,4.9c3.8,1,7.8,1.5,11.8,1.5c3.8,0,6.5-0.5,8.3-1.4c1.6-0.7,2.7-2.4,2.7-4.2
-				c0-1.4-0.8-2.7-2.4-4c-1.6-1.3-4.9-2.8-9.8-4.7c-5.1-1.8-9.8-4.2-14.2-7.2c-3.1-2.2-5.7-5.1-7.6-8.5c-1.6-3.2-2.4-6.7-2.3-10.2
-				c0-4.3,1.2-8.4,3.4-12.1c2.5-4,6.2-7.2,10.5-9.2c4.7-2.4,10.6-3.5,17.7-3.5c4.1,0,8.3,0.3,12.4,0.9c3,0.4,5.9,1.2,8.6,2.3
-				c0.4,0.1,0.8,0.5,1,0.9c0.1,0.4,0.2,0.8,0.2,1.2v16.3c0,0.4-0.2,0.8-0.5,1C192.9,107.1,192.4,107.1,192,106.9z"
-                        />
-                      </g>
-                    </g>
-                  </g>
-                </svg>
-              </div>
-              <div class="flex-initial">
-                <div class="font-bold text-lg text-white">Photoshop</div>
-              </div>
-            </div>
-          </div>
-        </div>
-       
-        <!--GitHub-->
-        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-            <div class="flex items-center">
-              <div class="flex-initial ml-4 mr-6">
-                <svg class="h-8 w-auto" viewBox="0 0 256 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-                  <g>
-                    <path
-                      d="M128.00106,0 C57.3172926,0 0,57.3066942 0,128.00106 C0,184.555281 36.6761997,232.535542 87.534937,249.460899 C93.9320223,250.645779 96.280588,246.684165 96.280588,243.303333 C96.280588,240.251045 96.1618878,230.167899 96.106777,219.472176 C60.4967585,227.215235 52.9826207,204.369712 52.9826207,204.369712 C47.1599584,189.574598 38.770408,185.640538 38.770408,185.640538 C27.1568785,177.696113 39.6458206,177.859325 39.6458206,177.859325 C52.4993419,178.762293 59.267365,191.04987 59.267365,191.04987 C70.6837675,210.618423 89.2115753,204.961093 96.5158685,201.690482 C97.6647155,193.417512 100.981959,187.77078 104.642583,184.574357 C76.211799,181.33766 46.324819,170.362144 46.324819,121.315702 C46.324819,107.340889 51.3250588,95.9223682 59.5132437,86.9583937 C58.1842268,83.7344152 53.8029229,70.715562 60.7532354,53.0843636 C60.7532354,53.0843636 71.5019501,49.6441813 95.9626412,66.2049595 C106.172967,63.368876 117.123047,61.9465949 128.00106,61.8978432 C138.879073,61.9465949 149.837632,63.368876 160.067033,66.2049595 C184.49805,49.6441813 195.231926,53.0843636 195.231926,53.0843636 C202.199197,70.715562 197.815773,83.7344152 196.486756,86.9583937 C204.694018,95.9223682 209.660343,107.340889 209.660343,121.315702 C209.660343,170.478725 179.716133,181.303747 151.213281,184.472614 C155.80443,188.444828 159.895342,196.234518 159.895342,208.176593 C159.895342,225.303317 159.746968,239.087361 159.746968,243.303333 C159.746968,246.709601 162.05102,250.70089 168.53925,249.443941 C219.370432,232.499507 256,184.536204 256,128.00106 C256,57.3066942 198.691187,0 128.00106,0 Z M47.9405593,182.340212 C47.6586465,182.976105 46.6581745,183.166873 45.7467277,182.730227 C44.8183235,182.312656 44.2968914,181.445722 44.5978808,180.80771 C44.8734344,180.152739 45.876026,179.97045 46.8023103,180.409216 C47.7328342,180.826786 48.2627451,181.702199 47.9405593,182.340212 Z M54.2367892,187.958254 C53.6263318,188.524199 52.4329723,188.261363 51.6232682,187.366874 C50.7860088,186.474504 50.6291553,185.281144 51.2480912,184.70672 C51.8776254,184.140775 53.0349512,184.405731 53.8743302,185.298101 C54.7115892,186.201069 54.8748019,187.38595 54.2367892,187.958254 Z M58.5562413,195.146347 C57.7719732,195.691096 56.4895886,195.180261 55.6968417,194.042013 C54.9125733,192.903764 54.9125733,191.538713 55.713799,190.991845 C56.5086651,190.444977 57.7719732,190.936735 58.5753181,192.066505 C59.3574669,193.22383 59.3574669,194.58888 58.5562413,195.146347 Z M65.8613592,203.471174 C65.1597571,204.244846 63.6654083,204.03712 62.5716717,202.981538 C61.4524999,201.94927 61.1409122,200.484596 61.8446341,199.710926 C62.5547146,198.935137 64.0575422,199.15346 65.1597571,200.200564 C66.2704506,201.230712 66.6095936,202.705984 65.8613592,203.471174 Z M75.3025151,206.281542 C74.9930474,207.284134 73.553809,207.739857 72.1039724,207.313809 C70.6562556,206.875043 69.7087748,205.700761 70.0012857,204.687571 C70.302275,203.678621 71.7478721,203.20382 73.2083069,203.659543 C74.6539041,204.09619 75.6035048,205.261994 75.3025151,206.281542 Z M86.046947,207.473627 C86.0829806,208.529209 84.8535871,209.404622 83.3316829,209.4237 C81.8013,209.457614 80.563428,208.603398 80.5464708,207.564772 C80.5464708,206.498591 81.7483088,205.631657 83.2786917,205.606221 C84.8005962,205.576546 86.046947,206.424403 86.046947,207.473627 Z M96.6021471,207.069023 C96.7844366,208.099171 95.7267341,209.156872 94.215428,209.438785 C92.7295577,209.710099 91.3539086,209.074206 91.1652603,208.052538 C90.9808515,206.996955 92.0576306,205.939253 93.5413813,205.66582 C95.054807,205.402984 96.4092596,206.021919 96.6021471,207.069023 Z"
-                      fill="#FFF"
-                    ></path>
-                  </g>
-                </svg>
-              </div>
-              <div class="flex-initial">
-                <div class="font-bold text-lg text-white">GitHub</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--Visual Studio Code-->
-        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-            <div class="flex items-center">
-              <div class="flex-initial ml-4 mr-6">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" class="h-8 w-auto" alt="Visual Studio Code Logo" />
-              </div>
-              <div class="flex-initial">
-                <div class="font-bold text-lg text-white">
-                  VS Code
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--NPM-->
+        const areaRect = shapesArea.getBoundingClientRect();
+        const clientX = e.clientX || e.touches[0].clientX;
+        const clientY = e.clientY || e.touches[0].clientY;
         
-        <!--CSS3-->
-        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-            <div class="flex items-center">
-              <div class="flex-initial ml-4 mr-6">
-                <svg class="h-8 w-auto" viewBox="0 0 256 361" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-                  <g>
-                    <path d="M127.843868,360.087912 L23.6617143,331.166242 L0.445186813,70.7657143 L255.554813,70.7657143 L232.31367,331.125451 L127.843868,360.087912 L127.843868,360.087912 Z" fill="#264DE4"></path>
-                    <path d="M212.416703,314.546637 L232.277802,92.0573187 L128,92.0573187 L128,337.950242 L212.416703,314.546637 L212.416703,314.546637 Z" fill="#2965F1"></path>
-                    <path d="M53.6685714,188.636132 L56.530989,220.572835 L128,220.572835 L128,188.636132 L53.6685714,188.636132 L53.6685714,188.636132 Z" fill="#EBEBEB"></path>
-                    <path d="M47.917011,123.994725 L50.8202198,155.932132 L128,155.932132 L128,123.994725 L47.917011,123.994725 L47.917011,123.994725 Z" fill="#EBEBEB"></path>
-                    <path
-                      d="M128,271.580132 L127.860044,271.617407 L92.2915165,262.013187 L90.0177582,236.54189 L57.957978,236.54189 L62.4323516,286.687648 L127.853011,304.848879 L128,304.808088 L128,271.580132 L128,271.580132 Z"
-                      fill="#EBEBEB"
-                    ></path>
-                    <path
-                      d="M60.4835165,0 L99.1648352,0 L99.1648352,16.1758242 L76.6593407,16.1758242 L76.6593407,32.3516484 L99.1648352,32.3516484 L99.1648352,48.5274725 L60.4835165,48.5274725 L60.4835165,0 L60.4835165,0 Z"
-                      fill="#000000"
-                    ></path>
-                    <path
-                      d="M106.901099,0 L145.582418,0 L145.582418,14.0659341 L123.076923,14.0659341 L123.076923,16.8791209 L145.582418,16.8791209 L145.582418,49.2307692 L106.901099,49.2307692 L106.901099,34.4615385 L129.406593,34.4615385 L129.406593,31.6483516 L106.901099,31.6483516 L106.901099,0 L106.901099,0 Z"
-                      fill="#000000"
-                    ></path>
-                    <path
-                      d="M153.318681,0 L192,0 L192,14.0659341 L169.494505,14.0659341 L169.494505,16.8791209 L192,16.8791209 L192,49.2307692 L153.318681,49.2307692 L153.318681,34.4615385 L175.824176,34.4615385 L175.824176,31.6483516 L153.318681,31.6483516 L153.318681,0 L153.318681,0 Z"
-                      fill="#000000"
-                    ></path>
-                    <path
-                      d="M202.126769,188.636132 L207.892396,123.994725 L127.889582,123.994725 L127.889582,155.932132 L172.892132,155.932132 L169.98611,188.636132 L127.889582,188.636132 L127.889582,220.572835 L167.216527,220.572835 L163.509451,261.992791 L127.889582,271.606857 L127.889582,304.833407 L193.362286,286.687648 L193.842637,281.291956 L201.347516,197.212132 L202.126769,188.636132 L202.126769,188.636132 Z"
-                      fill="#FFFFFF"
-                    ></path>
-                  </g>
-                </svg>
-              </div>
-              <div class="flex-initial">
-                <div class="font-bold text-lg text-white">CSS3</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--Windows-->
-        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-            <div class="flex items-center">
-              <div class="flex-initial ml-4 mr-6">
-                <svg class="h-8 w-auto" viewBox="0 0 256 257" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-                  <g>
-                    <path
-                      d="M0,36.3573818 L104.619084,22.1093454 L104.664817,123.02292 L0.0955693151,123.618411 L0,36.3573818 Z M104.569248,134.650129 L104.650452,235.651651 L0.0812046021,221.274919 L0.0753414539,133.972642 L104.569248,134.650129 Z M117.25153,20.2454506 L255.967753,6.21724894e-15 L255.967753,121.739477 L117.25153,122.840723 L117.25153,20.2454506 Z M256,135.599959 L255.96746,256.791232 L117.251237,237.213007 L117.056874,135.373055 L256,135.599959 Z"
-                      fill="#00ADEF"
-                    ></path>
-                  </g>
-                </svg>
-              </div>
-              <div class="flex-initial">
-                <div class="font-bold text-lg text-white">Windows</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--Figma-->
-        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-            <div class="flex items-center">
-              <div class="flex-initial ml-4 mr-6">
-                <img width="39" height="48" src = "https://i.ibb.co/64J07XD/image.png" alt="My Happy PNG"/>
-            </div>
-            </div>
-            <div class="flex-initial">
-              <div class="font-bold text-lg text-white">Vercel</div>
-            </div>
-          </div>
-        </div>
-        <!--NuxtJS-->
-       
-        <!--VueJS-->
-       
-        <!--Discord-->
-        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
-            <div class="flex items-center">
-              <div class="flex-initial ml-4 mr-6">
-                <svg class="h-8 w-auto" viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0)">
-                    <path
-                      d="M60.1045 4.8978C55.5792 2.8214 50.7265 1.2916 45.6527 0.41542C45.5603 0.39851 45.468 0.440769 45.4204 0.525289C44.7963 1.6353 44.105 3.0834 43.6209 4.2216C38.1637 3.4046 32.7345 3.4046 27.3892 4.2216C26.905 3.0581 26.1886 1.6353 25.5617 0.525289C25.5141 0.443589 25.4218 0.40133 25.3294 0.41542C20.2584 1.2888 15.4057 2.8186 10.8776 4.8978C10.8384 4.9147 10.8048 4.9429 10.7825 4.9795C1.57795 18.7309 -0.943561 32.1443 0.293408 45.3914C0.299005 45.4562 0.335386 45.5182 0.385761 45.5576C6.45866 50.0174 12.3413 52.7249 18.1147 54.5195C18.2071 54.5477 18.305 54.5139 18.3638 54.4378C19.7295 52.5728 20.9469 50.6063 21.9907 48.5383C22.0523 48.4172 21.9935 48.2735 21.8676 48.2256C19.9366 47.4931 18.0979 46.6 16.3292 45.5858C16.1893 45.5041 16.1781 45.304 16.3068 45.2082C16.679 44.9293 17.0513 44.6391 17.4067 44.3461C17.471 44.2926 17.5606 44.2813 17.6362 44.3151C29.2558 49.6202 41.8354 49.6202 53.3179 44.3151C53.3935 44.2785 53.4831 44.2898 53.5502 44.3433C53.9057 44.6363 54.2779 44.9293 54.6529 45.2082C54.7816 45.304 54.7732 45.5041 54.6333 45.5858C52.8646 46.6197 51.0259 47.4931 49.0921 48.2228C48.9662 48.2707 48.9102 48.4172 48.9718 48.5383C50.038 50.6034 51.2554 52.5699 52.5959 54.435C52.6519 54.5139 52.7526 54.5477 52.845 54.5195C58.6464 52.7249 64.529 50.0174 70.6019 45.5576C70.6551 45.5182 70.6887 45.459 70.6943 45.3942C72.1747 30.0791 68.2147 16.7757 60.1968 4.9823C60.1772 4.9429 60.1437 4.9147 60.1045 4.8978ZM23.7259 37.3253C20.2276 37.3253 17.3451 34.1136 17.3451 30.1693C17.3451 26.225 20.1717 23.0133 23.7259 23.0133C27.308 23.0133 30.1626 26.2532 30.1066 30.1693C30.1066 34.1136 27.28 37.3253 23.7259 37.3253ZM47.3178 37.3253C43.8196 37.3253 40.9371 34.1136 40.9371 30.1693C40.9371 26.225 43.7636 23.0133 47.3178 23.0133C50.9 23.0133 53.7545 26.2532 53.6986 30.1693C53.6986 34.1136 50.9 37.3253 47.3178 37.3253Z"
-                      fill="#5865F2"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0">
-                      <rect width="71" height="55" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </div>
-              <div class="flex-initial">
-                <div class="font-bold text-lg text-white">Discord</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Activity Status-->
-      <div id="activities_anaxes"></div> 
-      <div class="text-center lg:text-left font-regular tracking-widest uppercase text-sm text-gray-500 mt-16 mb-6">
-        Availability <span class="bg-red-500 text-white rounded-sm text-sm p-1 lowercase italic">Unavailable</span>, <span class="bg-green-500 text-white rounded-sm text-sm p-1 lowercase italic">Available</span>
-      </div>
-      <div class="grid md:grid-cols-3 grid-cols-1 gap-10 ">
-      <div class="rounded-md p-6 sm:px-4 col mb-8 w-full mx-auto font-semibold text-lg flex items-center justify-center hidden md:inline" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.ibb.co/TtQ80JF/Peach-Minimalist-Linktree-Profile-Image.png)">
+        let newX = clientX - areaRect.left - offsetX;
+        let newY = clientY - areaRect.top - offsetY;
+        
+        // Bounds
+        newX = Math.max(0, Math.min(newX, areaRect.width - activeShape.offsetWidth));
+        newY = Math.max(0, Math.min(newY, areaRect.height - activeShape.offsetHeight));
+        
+        activeShape.style.left = newX + 'px';
+        activeShape.style.top = newY + 'px';
+      }
 
-      </div>
-        <div class="rounded-md p-6 sm:px-4 col mb-8 w-full mx-auto font-semibold text-lg flex items-center justify-center" style="background-color: #0e141d;">
-        <div class="flex items-center justify-center">
-        <div class="grid grid-rows-4 grid-flow-col gap-4 text-white content-center">
-            <div class="grid grid-cols-8 gap-4 content-center">
-              <span></span>
-              <span>M</span>
-              <span>T</span>
-              <span>W</span>
-              <span>T</span>
-              <span>F</span>
-              <span>S</span>
-              <span>S</span>
-            </div>
-            <div class="grid grid-cols-8 gap-3 content-center">
-              <span>🌞</span>
-              <div class="bg-red-500 rounded-sm"></div>
-              <div class="bg-red-500 rounded-sm"></div>
-              <div class="bg-red-500 rounded-sm"></div>
-              <div class="bg-red-500 rounded-sm"></div>
-              <div class="bg-red-500 rounded-sm"></div>
-              <div class="bg-green-500 rounded-sm"></div>
-              <div class="bg-red-500 rounded-sm"></div>
-            </div>
-            <div class="grid grid-cols-8 gap-3 content-center">
-              <span>🌇</span>
-              <div class="bg-red-500 rounded-sm"></div>
-              <div class="bg-red-500 rounded-sm"></div>
-              <div class="bg-red-500 rounded-sm"></div>
-              <div class="bg-red-500 rounded-sm"></div>
-              <div class="bg-red-500 rounded-sm"></div>
-              <div class="bg-green-500 rounded-sm"></div>
-              <div class="bg-green-500 rounded-sm"></div>
-            </div>
-            <div class="grid grid-cols-8 gap-3 content-center">
-              <span>🌛</span>
-              <div class="bg-red-500 rounded-sm"></div>
-              <div class="bg-red-500 rounded-sm"></div>
-              <div class="bg-red-500 rounded-sm"></div>
-              <div class="bg-red-500 rounded-sm"></div>
-              <div class="bg-red-500 rounded-sm"></div>
-              <div class="bg-red-500 rounded-sm"></div>
-              <div class="bg-green-500 rounded-sm"></div>
-            </div>
-         </div>
-        </div>
-      </div>
-        <div class="rounded-md p-6 sm:px-4 col mb-8 w-full mx-auto font-semibold text-lg flex items-center justify-center hidden md:inline" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.ibb.co/TtQ80JF/Peach-Minimalist-Linktree-Profile-Image.png)">
+      document.addEventListener('mouseup', stopDrag);
+      document.addEventListener('touchend', stopDrag);
 
-        </div>
-      </div>
-      <br />
-        <p class="center font-medium text-lg inter text-white">
-           <center>
-            <a rel="noopener noreferrer" href="#"><span class="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-400 hover:from-pink-500 hover:to-purple-400">Copyright AnukarOP &nbsp;© 2026</span></a>
-		       </center> 
-        </p>
-          <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
-        </div>
-      </div>
-    </div>
-    </div>
-    
-    <!--JavaScript Files-->
-  <script defer src="dist/assets/ts/loader.js" type="text/javascript"></script>
-  <script defer src="dist/assets/ts/lanyard.js" type="text/javascript"></script>
-  <script defer src="dist/assets/ts/support.js" type="text/javascript"></script>
-  <script defer src="dist/assets/ts/index.js" type="text/javascript"></script>
-  <script defer src="https://momentjs.com/downloads/moment.min.js" type="text/javascript"></script>
+      function stopDrag() {
+        if (activeShape) {
+          activeShape.style.zIndex = 1;
+          activeShape = null;
+        }
+      }
+
+      // ===== SLIDER WIDGET =====
+      const moodSlider = document.getElementById('mood-slider');
+      const sliderValue = document.getElementById('slider-value');
+      const moods = ['😢', '😕', '😐', '🙂', '😄', '🤩'];
+
+      moodSlider.addEventListener('input', () => {
+        const value = moodSlider.value;
+        const moodIndex = Math.floor(value / 20);
+        sliderValue.textContent = moods[Math.min(moodIndex, 5)];
+      });
+
+      // ===== COUNTER WIDGET =====
+      let counterValue = 0;
+      const counterDisplay = document.getElementById('counter-display');
+
+      document.getElementById('counter-plus').addEventListener('click', () => {
+        counterValue++;
+        counterDisplay.textContent = counterValue;
+      });
+
+      document.getElementById('counter-minus').addEventListener('click', () => {
+        counterValue--;
+        counterDisplay.textContent = counterValue;
+      });
+
+      document.getElementById('counter-reset').addEventListener('click', () => {
+        counterValue = 0;
+        counterDisplay.textContent = counterValue;
+      });
+    </script>
   </body>
 </html>
