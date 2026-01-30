@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Hyper Cursor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    :root {
+      --bg-dark: #09090b;
+      --bg-panel: #13131a;
+      --neon-pink: #ff0099;
+      --neon-cyan: #00fff2;
+      --text-main: #ffffff;
+      --text-muted: #8888aa;
+    }
+
+    body {
+      background: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Rajdhani', sans-serif;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    /* Grid Background */
+    .grid-bg {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image: 
+        linear-gradient(rgba(0, 255, 242, 0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 242, 0.015) 1px, transparent 1px);
+      background-size: 50px 50px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 30px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 60px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .logo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--neon-pink);
+      text-shadow: 0 0 20px rgba(255, 0, 153, 0.5);
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 36px;
+      font-weight: 900;
+      margin-bottom: 15px;
+      background: linear-gradient(90deg, var(--neon-pink), var(--neon-cyan));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .last-updated {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    /* Content */
+    .content {
+      background: rgba(20, 20, 30, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 50px;
+    }
+
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 20px;
+      color: var(--neon-cyan);
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(0, 255, 242, 0.2);
+    }
+
+    h2:first-child {
+      margin-top: 0;
+    }
+
+    p {
+      color: var(--text-muted);
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      color: var(--text-muted);
+      margin-left: 25px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .highlight-box {
+      background: rgba(57, 255, 20, 0.1);
+      border: 1px solid rgba(57, 255, 20, 0.3);
+      border-radius: 12px;
+      padding: 20px 25px;
+      margin: 30px 0;
+    }
+
+    .highlight-box p {
+      color: #39ff14;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .warning-box {
+      background: rgba(255, 0, 153, 0.1);
+      border: 1px solid rgba(255, 0, 153, 0.3);
+      border-radius: 12px;
+      padding: 20px 25px;
+      margin: 30px 0;
+    }
+
+    .warning-box p {
+      color: var(--neon-pink);
+      margin: 0;
+    }
+
+    strong {
+      color: var(--text-main);
+    }
+
+    a {
+      color: var(--neon-cyan);
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      text-shadow: 0 0 10px rgba(0, 255, 242, 0.5);
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      margin-top: 60px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 16px;
+      color: var(--text-muted);
+    }
+
+    .footer-brand span {
+      font-weight: 700;
+      background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #9400d3, #ff0000);
+      background-size: 300% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: rainbow 4s linear infinite;
+    }
+
+    @keyframes rainbow {
+      0% { background-position: 100% 0; }
+      100% { background-position: 0 0; }
+    }
+
+    .contact-link {
+      display: inline-block;
+      margin-top: 15px;
+      color: var(--neon-cyan);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-bg"></div>
+
+  <div class="container">
+    <div class="header">
+      <a href="landing-page.html" class="logo">HYPER CURSOR</a>
+      <h1>Privacy Policy</h1>
+      <p class="last-updated">Last Updated: January 30, 2026</p>
+    </div>
+
+    <div class="content">
+      <h2>Introduction</h2>
+      <p>Welcome to Hyper Cursor ("we," "our," or "us"). We are committed to protecting your privacy and ensuring transparency about how our Chrome extension operates. This Privacy Policy explains our data practices for the Hyper Cursor browser extension.</p>
+
+      <div class="highlight-box">
+        <p>🔒 TL;DR: Hyper Cursor does NOT collect, store, transmit, or share any personal data. Your privacy is 100% protected.</p>
+      </div>
+
+      <h2>Information We Collect</h2>
+      <p><strong>We do not collect any information.</strong> Hyper Cursor is designed with privacy as a core principle:</p>
+      <ul>
+        <li><strong>No Personal Data:</strong> We do not collect names, email addresses, or any personally identifiable information.</li>
+        <li><strong>No Browsing History:</strong> We do not track, monitor, or store any information about the websites you visit.</li>
+        <li><strong>No Analytics:</strong> We do not use any analytics tools, tracking pixels, or telemetry.</li>
+        <li><strong>No Cookies:</strong> We do not set or read any cookies.</li>
+        <li><strong>No Network Requests:</strong> The extension does not communicate with any external servers.</li>
+      </ul>
+
+      <h2>Data Storage</h2>
+      <p>Hyper Cursor stores only your <strong>preference settings</strong> (such as cursor color, shape, size, and effect toggles) locally on your device using Chrome's built-in <code>chrome.storage.sync</code> API. This data:</p>
+      <ul>
+        <li>Is stored entirely on your device and in your Chrome profile</li>
+        <li>Syncs across your Chrome browsers only if you're signed into Chrome (via Google's infrastructure, not ours)</li>
+        <li>Is never transmitted to us or any third party</li>
+        <li>Can be completely removed by uninstalling the extension</li>
+      </ul>
+
+      <h2>Permissions Explained</h2>
+      <p>Hyper Cursor requests minimal permissions to function:</p>
+      <ul>
+        <li><strong>Storage Permission:</strong> Required to save your cursor preferences locally so they persist between browser sessions.</li>
+      </ul>
+      <p>We do not request access to your browsing history, bookmarks, downloads, or any other sensitive data.</p>
+
+      <h2>Third-Party Services</h2>
+      <p>Hyper Cursor does not integrate with, connect to, or share data with any third-party services, APIs, or external servers. The extension operates entirely offline and locally on your device.</p>
+
+      <h2>Children's Privacy</h2>
+      <p>Hyper Cursor does not collect any data from anyone, including children under 13. The extension is safe for users of all ages.</p>
+
+      <h2>Data Security</h2>
+      <p>Since we do not collect or transmit any data, there is no risk of data breaches or unauthorized access to your information through our extension. Your settings remain securely stored on your own device.</p>
+
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last Updated" date. We encourage you to review this policy periodically.</p>
+
+      <h2>Your Rights</h2>
+      <p>Since we do not collect any personal data, there is no data to access, modify, or delete. However, you can:</p>
+      <ul>
+        <li>Uninstall the extension at any time to remove all locally stored preferences</li>
+        <li>Clear your browser's extension data through Chrome settings</li>
+        <li>Disable sync in Chrome to prevent settings from syncing across devices</li>
+      </ul>
+
+      <h2>Contact Us</h2>
+      <p>If you have any questions, concerns, or feedback about this Privacy Policy or Hyper Cursor, please contact us at:</p>
+      <p><strong>Email:</strong> <a href="mailto:help@anukar.tech">help@anukar.tech</a></p>
+    </div>
+
+    <div class="footer">
+      <div class="footer-brand">
+        Made with ❤️ by <span>Anukar.tech</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
